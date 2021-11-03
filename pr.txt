@@ -1,0 +1,3263 @@
+PHPUnit 9.5.10 by Sebastian Bergmann and contributors.
+
+.........E                                                        10 / 10 (100%)
+
+Time: 00:00.879, Memory: 40.50 MB
+
+There was 1 error:
+
+1) Tests\Feature\CategoryViewTest::test_index
+Error: Cannot access protected property Illuminate\Testing\TestView::$rendered
+
+/home/andy/Projects/ecommerce/tests/Feature/CategoryViewTest.php:23
+
+ERRORS!
+Tests: 10, Assertions: 20, Errors: 1.
+PHPUnit 9.5.10 by Sebastian Bergmann and contributors.
+
+.........Illuminate\Testing\TestView {#1882
+  #view: Illuminate\View\View {#2856
+    #factory: Illuminate\View\Factory {#5487
+      #engines: Illuminate\View\Engines\EngineResolver {#2774
+        #resolvers: array:3 [
+          "file" => Closure() {#5199
+            class: "Illuminate\View\ViewServiceProvider"
+            this: Illuminate\View\ViewServiceProvider {#5273
+              #app: Illuminate\Foundation\Application {#4487
+                #basePath: "/home/andy/Projects/ecommerce"
+                #hasBeenBootstrapped: true
+                #booted: true
+                #bootingCallbacks: array:2 [
+                  0 => Closure() {#5188
+                    class: "Illuminate\Foundation\Application"
+                    this: Illuminate\Foundation\Application {#4487}
+                    use: { …1}
+                    file: "./vendor/laravel/framework/src/Illuminate/Foundation/Application.php"
+                    line: "809 to 811"
+                  }
+                  1 => Closure() {#4687
+                    class: "Illuminate\Foundation\Application"
+                    this: Illuminate\Foundation\Application {#4487}
+                    use: { …1}
+                    file: "./vendor/laravel/framework/src/Illuminate/Foundation/Application.php"
+                    line: "809 to 811"
+                  }
+                ]
+                #bootedCallbacks: array:2 [
+                  0 => Closure() {#132
+                    class: "Illuminate\Foundation\Console\Kernel"
+                    this: App\Console\Kernel {#6485
+                      #commands: []
+                      #app: Illuminate\Foundation\Application {#4487}
+                      #events: Illuminate\Events\Dispatcher {#2831
+                        #container: Illuminate\Foundation\Application {#4487}
+                        #listeners: array:8 [
+                          "Illuminate\Log\Events\MessageLogged" => array:2 [
+                            0 => Closure($event, $payload) {#5265 …5}
+                            1 => Closure($event, $payload) {#5181 …5}
+                          ]
+                          "Illuminate\Queue\Events\JobExceptionOccurred" => array:1 [
+                            0 => Closure($event, $payload) {#2769 …5}
+                          ]
+                          "Illuminate\Queue\Events\JobProcessing" => array:1 [
+                            0 => Closure($event, $payload) {#3533 …5}
+                          ]
+                          "Illuminate\Queue\Events\JobProcessed" => array:1 [
+                            0 => Closure($event, $payload) {#5180 …5}
+                          ]
+                          "Illuminate\Database\Events\QueryExecuted" => array:1 [
+                            0 => Closure($event, $payload) {#2884 …5}
+                          ]
+                          "Illuminate\Foundation\Http\Events\RequestHandled" => array:1 [
+                            0 => Closure($event, $payload) {#2879 …5}
+                          ]
+                          "Illuminate\Foundation\Events\LocaleUpdated" => array:1 [
+                            0 => Closure($event, $payload) {#4693 …5}
+                          ]
+                          "Illuminate\Auth\Events\Registered" => array:1 [
+                            0 => Closure($event, $payload) {#4624 …5}
+                          ]
+                        ]
+                        #wildcards: []
+                        #wildcardsCache: array:74 [
+                          "bootstrapping: Illuminate\Foundation\Bootstrap\LoadEnvironmentVariables" => []
+                          "bootstrapped: Illuminate\Foundation\Bootstrap\LoadEnvironmentVariables" => []
+                          "bootstrapping: Illuminate\Foundation\Bootstrap\LoadConfiguration" => []
+                          "bootstrapped: Illuminate\Foundation\Bootstrap\LoadConfiguration" => []
+                          "bootstrapping: Illuminate\Foundation\Bootstrap\HandleExceptions" => []
+                          "bootstrapped: Illuminate\Foundation\Bootstrap\HandleExceptions" => []
+                          "bootstrapping: Illuminate\Foundation\Bootstrap\RegisterFacades" => []
+                          "bootstrapped: Illuminate\Foundation\Bootstrap\RegisterFacades" => []
+                          "bootstrapping: Illuminate\Foundation\Bootstrap\SetRequestForConsole" => []
+                          "bootstrapped: Illuminate\Foundation\Bootstrap\SetRequestForConsole" => []
+                          "bootstrapping: Illuminate\Foundation\Bootstrap\RegisterProviders" => []
+                          "bootstrapped: Illuminate\Foundation\Bootstrap\RegisterProviders" => []
+                          "bootstrapping: Illuminate\Foundation\Bootstrap\BootProviders" => []
+                          "bootstrapped: Illuminate\Foundation\Bootstrap\BootProviders" => []
+                          "Illuminate\Console\Events\ArtisanStarting" => []
+                          "Illuminate\Console\Events\CommandStarting" => []
+                          "Illuminate\Database\Events\StatementPrepared" => []
+                          "Illuminate\Database\Events\QueryExecuted" => []
+                          "Illuminate\Database\Events\MigrationsStarted" => []
+                          "Illuminate\Database\Events\MigrationStarted" => []
+                          "Illuminate\Database\Events\MigrationEnded" => []
+                          "Illuminate\Database\Events\MigrationsEnded" => []
+                          "Illuminate\Console\Events\CommandFinished" => []
+                          "eloquent.booting: App\Models\Category" => []
+                          "eloquent.booted: App\Models\Category" => []
+                          "eloquent.saving: App\Models\Category" => []
+                          "eloquent.creating: App\Models\Category" => []
+                          "eloquent.created: App\Models\Category" => []
+                          "eloquent.saved: App\Models\Category" => []
+                          "eloquent.booting: App\Models\User" => []
+                          "eloquent.booted: App\Models\User" => []
+                          "eloquent.saving: App\Models\User" => []
+                          "eloquent.creating: App\Models\User" => []
+                          "eloquent.created: App\Models\User" => []
+                          "eloquent.saved: App\Models\User" => []
+                          "Illuminate\Auth\Events\Authenticated" => []
+                          "creating: category.index" => []
+                          "composing: category.index" => []
+                          "creating: layouts.app" => []
+                          "creating: components.admin-layout" => []
+                          "creating: components.common.input-search" => []
+                          "composing: components.common.input-search" => []
+                          "creating: components.category.table" => []
+                          "composing: components.category.table" => []
+                          "creating: components.common.table" => []
+                          "creating: components.common.table.header" => []
+                          "creating: components.common.table.header.cell" => []
+                          "composing: components.common.table.header.cell" => []
+                          "composing: components.common.table.header" => []
+                          "creating: components.common.table.body" => []
+                          "creating: components.common.table.body.row" => []
+                          "creating: components.common.table.body.cell" => []
+                          "composing: components.common.table.body.cell" => []
+                          "composing: components.common.table.body.row" => []
+                          "composing: components.common.table.body" => []
+                          "composing: components.common.table" => []
+                          "composing: components.admin-layout" => []
+                          "composing: layouts.app" => []
+                          "creating: jetstream::components.banner" => []
+                          "composing: jetstream::components.banner" => []
+                          "creating: navigation-menu" => []
+                          "composing: navigation-menu" => []
+                          "creating: jetstream::components.application-mark" => []
+                          "composing: jetstream::components.application-mark" => []
+                          "creating: jetstream::components.nav-link" => []
+                          "composing: jetstream::components.nav-link" => []
+                          "creating: jetstream::components.dropdown-link" => []
+                          "composing: jetstream::components.dropdown-link" => []
+                          "creating: jetstream::components.dropdown" => []
+                          "composing: jetstream::components.dropdown" => []
+                          "creating: jetstream::components.responsive-nav-link" => []
+                          "composing: jetstream::components.responsive-nav-link" => []
+                          "creating: laravel-bladezqGjaY" => []
+                          "composing: laravel-bladezqGjaY" => []
+                        ]
+                        #queueResolver: Closure() {#6519
+                          class: "Illuminate\Events\EventServiceProvider"
+                          this: Illuminate\Events\EventServiceProvider {#4471 …}
+                          use: {
+                            $app: Illuminate\Foundation\Application {#4487}
+                          }
+                          file: "./vendor/laravel/framework/src/Illuminate/Events/EventServiceProvider.php"
+                          line: "18 to 20"
+                        }
+                      }
+                      #artisan: null
+                      #commandsLoaded: true
+                      #bootstrappers: array:7 [ …7]
+                    }
+                    file: "./vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php"
+                    line: "88 to 90"
+                  }
+                  1 => Closure() {#4949
+                    class: "Illuminate\Foundation\Support\Providers\RouteServiceProvider"
+                    this: App\Providers\RouteServiceProvider {#2743
+                      #namespace: null
+                      #loadRoutesUsing: Closure() {#4702 …4}
+                      #app: Illuminate\Foundation\Application {#4487}
+                      #bootingCallbacks: []
+                      #bootedCallbacks: array:1 [ …1]
+                    }
+                    file: "./vendor/laravel/framework/src/Illuminate/Foundation/Support/Providers/RouteServiceProvider.php"
+                    line: "47 to 50"
+                  }
+                ]
+                #terminatingCallbacks: []
+                #serviceProviders: array:47 [
+                  0 => Illuminate\Events\EventServiceProvider {#4471 …}
+                  1 => Illuminate\Log\LogServiceProvider {#1878
+                    #app: Illuminate\Foundation\Application {#4487}
+                    #bootingCallbacks: []
+                    #bootedCallbacks: []
+                  }
+                  2 => Illuminate\Routing\RoutingServiceProvider {#3623
+                    #app: Illuminate\Foundation\Application {#4487}
+                    #bootingCallbacks: []
+                    #bootedCallbacks: []
+                  }
+                  3 => Illuminate\Auth\AuthServiceProvider {#7364
+                    #app: Illuminate\Foundation\Application {#4487}
+                    #bootingCallbacks: []
+                    #bootedCallbacks: []
+                  }
+                  4 => Illuminate\Cookie\CookieServiceProvider {#7221
+                    #app: Illuminate\Foundation\Application {#4487}
+                    #bootingCallbacks: []
+                    #bootedCallbacks: []
+                  }
+                  5 => Illuminate\Database\DatabaseServiceProvider {#5245
+                    #app: Illuminate\Foundation\Application {#4487}
+                    #bootingCallbacks: []
+                    #bootedCallbacks: []
+                  }
+                  6 => Illuminate\Encryption\EncryptionServiceProvider {#5251
+                    #app: Illuminate\Foundation\Application {#4487}
+                    #bootingCallbacks: []
+                    #bootedCallbacks: []
+                  }
+                  7 => Illuminate\Filesystem\FilesystemServiceProvider {#1936
+                    #app: Illuminate\Foundation\Application {#4487}
+                    #bootingCallbacks: []
+                    #bootedCallbacks: []
+                  }
+                  8 => Illuminate\Foundation\Providers\FormRequestServiceProvider {#5260
+                    #app: Illuminate\Foundation\Application {#4487}
+                    #bootingCallbacks: []
+                    #bootedCallbacks: []
+                  }
+                  9 => Illuminate\Testing\ParallelTestingServiceProvider {#5261
+                    #app: Illuminate\Foundation\Application {#4487}
+                    #bootingCallbacks: []
+                    #bootedCallbacks: []
+                  }
+                  10 => Illuminate\Foundation\Providers\FoundationServiceProvider {#5259
+                    #providers: array:2 [ …2]
+                    #instances: array:2 [ …2]
+                    #app: Illuminate\Foundation\Application {#4487}
+                    #bootingCallbacks: []
+                    #bootedCallbacks: []
+                  }
+                  11 => Illuminate\Notifications\NotificationServiceProvider {#5266
+                    #app: Illuminate\Foundation\Application {#4487}
+                    #bootingCallbacks: []
+                    #bootedCallbacks: []
+                  }
+                  12 => Illuminate\Pagination\PaginationServiceProvider {#5268
+                    #app: Illuminate\Foundation\Application {#4487}
+                    #bootingCallbacks: []
+                    #bootedCallbacks: []
+                  }
+                  13 => Illuminate\Session\SessionServiceProvider {#1896
+                    #app: Illuminate\Foundation\Application {#4487}
+                    #bootingCallbacks: []
+                    #bootedCallbacks: []
+                  }
+                  14 => Illuminate\View\ViewServiceProvider {#5273}
+                  15 => Facade\Ignition\IgnitionServiceProvider {#5050
+                    #app: Illuminate\Foundation\Application {#4487}
+                    #bootingCallbacks: []
+                    #bootedCallbacks: []
+                  }
+                  16 => Fruitcake\Cors\CorsServiceProvider {#234
+                    #app: Illuminate\Foundation\Application {#4487}
+                    #bootingCallbacks: []
+                    #bootedCallbacks: []
+                  }
+                  17 => Jenssegers\Agent\AgentServiceProvider {#6548
+                    #defer: true
+                    #app: Illuminate\Foundation\Application {#4487}
+                    #bootingCallbacks: []
+                    #bootedCallbacks: []
+                  }
+                  18 => Laravel\Fortify\FortifyServiceProvider {#7222
+                    #app: Illuminate\Foundation\Application {#4487}
+                    #bootingCallbacks: []
+                    #bootedCallbacks: []
+                  }
+                  19 => Laravel\Jetstream\JetstreamServiceProvider {#5212
+                    #app: Illuminate\Foundation\Application {#4487}
+                    #bootingCallbacks: []
+                    #bootedCallbacks: []
+                  }
+                  20 => Laravel\Sanctum\SanctumServiceProvider {#5208
+                    #app: Illuminate\Foundation\Application {#4487}
+                    #bootingCallbacks: []
+                    #bootedCallbacks: []
+                  }
+                  21 => Livewire\LivewireServiceProvider {#5207
+                    #app: Illuminate\Foundation\Application {#4487}
+                    #bootingCallbacks: []
+                    #bootedCallbacks: []
+                  }
+                  22 => Carbon\Laravel\ServiceProvider {#2737
+                    #app: Illuminate\Foundation\Application {#4487}
+                    #bootingCallbacks: []
+                    #bootedCallbacks: []
+                  }
+                  23 => NunoMaduro\Collision\Adapters\Laravel\CollisionServiceProvider {#2738
+                    #defer: true
+                    #app: Illuminate\Foundation\Application {#4487}
+                    #bootingCallbacks: []
+                    #bootedCallbacks: []
+                  }
+                  24 => App\Providers\AppServiceProvider {#2739
+                    #app: Illuminate\Foundation\Application {#4487}
+                    #bootingCallbacks: []
+                    #bootedCallbacks: []
+                  }
+                  25 => App\Providers\AuthServiceProvider {#2740
+                    #policies: []
+                    #app: Illuminate\Foundation\Application {#4487}
+                    #bootingCallbacks: []
+                    #bootedCallbacks: []
+                  }
+                  26 => App\Providers\EventServiceProvider {#2741
+                    #listen: array:1 [ …1]
+                    #subscribe: []
+                    #app: Illuminate\Foundation\Application {#4487}
+                    #bootingCallbacks: array:1 [ …1]
+                    #bootedCallbacks: []
+                  }
+                  27 => App\Providers\RouteServiceProvider {#2743}
+                  28 => App\Providers\FortifyServiceProvider {#2736
+                    #app: Illuminate\Foundation\Application {#4487}
+                    #bootingCallbacks: []
+                    #bootedCallbacks: []
+                  }
+                  29 => App\Providers\JetstreamServiceProvider {#2657
+                    #app: Illuminate\Foundation\Application {#4487}
+                    #bootingCallbacks: []
+                    #bootedCallbacks: []
+                  }
+                  30 => Illuminate\Queue\QueueServiceProvider {#5193
+                    #app: Illuminate\Foundation\Application {#4487}
+                    #bootingCallbacks: []
+                    #bootedCallbacks: []
+                  }
+                  31 => Illuminate\Cache\CacheServiceProvider {#7376
+                    #app: Illuminate\Foundation\Application {#4487}
+                    #bootingCallbacks: []
+                    #bootedCallbacks: []
+                  }
+                  32 => Illuminate\Broadcasting\BroadcastServiceProvider {#5231
+                    #app: Illuminate\Foundation\Application {#4487}
+                    #bootingCallbacks: []
+                    #bootedCallbacks: []
+                  }
+                  33 => Illuminate\Bus\BusServiceProvider {#3566
+                    #app: Illuminate\Foundation\Application {#4487}
+                    #bootingCallbacks: []
+                    #bootedCallbacks: []
+                  }
+                  34 => Illuminate\Foundation\Providers\ArtisanServiceProvider {#2965
+                    #commands: array:44 [ …44]
+                    #devCommands: array:32 [ …32]
+                    #app: Illuminate\Foundation\Application {#4487}
+                    #bootingCallbacks: []
+                    #bootedCallbacks: []
+                  }
+                  35 => Illuminate\Database\MigrationServiceProvider {#1826
+                    #commands: array:8 [ …8]
+                    #app: Illuminate\Foundation\Application {#4487}
+                    #bootingCallbacks: []
+                    #bootedCallbacks: []
+                  }
+                  36 => Illuminate\Foundation\Providers\ComposerServiceProvider {#3664
+                    #app: Illuminate\Foundation\Application {#4487}
+                    #bootingCallbacks: []
+                    #bootedCallbacks: []
+                  }
+                  37 => Illuminate\Foundation\Providers\ConsoleSupportServiceProvider {#3495
+                    #providers: array:3 [ …3]
+                    #instances: array:3 [ …3]
+                    #app: Illuminate\Foundation\Application {#4487}
+                    #bootingCallbacks: []
+                    #bootedCallbacks: []
+                  }
+                  38 => Illuminate\Hashing\HashServiceProvider {#2919
+                    #app: Illuminate\Foundation\Application {#4487}
+                    #bootingCallbacks: []
+                    #bootedCallbacks: []
+                  }
+                  39 => Illuminate\Mail\MailServiceProvider {#121
+                    #app: Illuminate\Foundation\Application {#4487}
+                    #bootingCallbacks: []
+                    #bootedCallbacks: []
+                  }
+                  40 => Illuminate\Pipeline\PipelineServiceProvider {#1891
+                    #app: Illuminate\Foundation\Application {#4487}
+                    #bootingCallbacks: []
+                    #bootedCallbacks: []
+                  }
+                  41 => Illuminate\Redis\RedisServiceProvider {#4277
+                    #app: Illuminate\Foundation\Application {#4487}
+                    #bootingCallbacks: []
+                    #bootedCallbacks: []
+                  }
+                  42 => Illuminate\Auth\Passwords\PasswordResetServiceProvider {#4739
+                    #app: Illuminate\Foundation\Application {#4487}
+                    #bootingCallbacks: []
+                    #bootedCallbacks: []
+                  }
+                  43 => Illuminate\Translation\TranslationServiceProvider {#7215
+                    #app: Illuminate\Foundation\Application {#4487}
+                    #bootingCallbacks: []
+                    #bootedCallbacks: []
+                  }
+                  44 => Illuminate\Validation\ValidationServiceProvider {#3708
+                    #app: Illuminate\Foundation\Application {#4487}
+                    #bootingCallbacks: []
+                    #bootedCallbacks: []
+                  }
+                  45 => Laravel\Sail\SailServiceProvider {#7381
+                    #app: Illuminate\Foundation\Application {#4487}
+                    #bootingCallbacks: []
+                    #bootedCallbacks: []
+                  }
+                  46 => Laravel\Tinker\TinkerServiceProvider {#3514
+                    #app: Illuminate\Foundation\Application {#4487}
+                    #bootingCallbacks: []
+                    #bootedCallbacks: []
+                  }
+                ]
+                #loadedProviders: array:47 [
+                  "Illuminate\Events\EventServiceProvider" => true
+                  "Illuminate\Log\LogServiceProvider" => true
+                  "Illuminate\Routing\RoutingServiceProvider" => true
+                  "Illuminate\Auth\AuthServiceProvider" => true
+                  "Illuminate\Cookie\CookieServiceProvider" => true
+                  "Illuminate\Database\DatabaseServiceProvider" => true
+                  "Illuminate\Encryption\EncryptionServiceProvider" => true
+                  "Illuminate\Filesystem\FilesystemServiceProvider" => true
+                  "Illuminate\Foundation\Providers\FormRequestServiceProvider" => true
+                  "Illuminate\Testing\ParallelTestingServiceProvider" => true
+                  "Illuminate\Foundation\Providers\FoundationServiceProvider" => true
+                  "Illuminate\Notifications\NotificationServiceProvider" => true
+                  "Illuminate\Pagination\PaginationServiceProvider" => true
+                  "Illuminate\Session\SessionServiceProvider" => true
+                  "Illuminate\View\ViewServiceProvider" => true
+                  "Facade\Ignition\IgnitionServiceProvider" => true
+                  "Fruitcake\Cors\CorsServiceProvider" => true
+                  "Jenssegers\Agent\AgentServiceProvider" => true
+                  "Laravel\Fortify\FortifyServiceProvider" => true
+                  "Laravel\Jetstream\JetstreamServiceProvider" => true
+                  "Laravel\Sanctum\SanctumServiceProvider" => true
+                  "Livewire\LivewireServiceProvider" => true
+                  "Carbon\Laravel\ServiceProvider" => true
+                  "NunoMaduro\Collision\Adapters\Laravel\CollisionServiceProvider" => true
+                  "App\Providers\AppServiceProvider" => true
+                  "App\Providers\AuthServiceProvider" => true
+                  "App\Providers\EventServiceProvider" => true
+                  "App\Providers\RouteServiceProvider" => true
+                  "App\Providers\FortifyServiceProvider" => true
+                  "App\Providers\JetstreamServiceProvider" => true
+                  "Illuminate\Queue\QueueServiceProvider" => true
+                  "Illuminate\Cache\CacheServiceProvider" => true
+                  "Illuminate\Broadcasting\BroadcastServiceProvider" => true
+                  "Illuminate\Bus\BusServiceProvider" => true
+                  "Illuminate\Foundation\Providers\ArtisanServiceProvider" => true
+                  "Illuminate\Database\MigrationServiceProvider" => true
+                  "Illuminate\Foundation\Providers\ComposerServiceProvider" => true
+                  "Illuminate\Foundation\Providers\ConsoleSupportServiceProvider" => true
+                  "Illuminate\Hashing\HashServiceProvider" => true
+                  "Illuminate\Mail\MailServiceProvider" => true
+                  "Illuminate\Pipeline\PipelineServiceProvider" => true
+                  "Illuminate\Redis\RedisServiceProvider" => true
+                  "Illuminate\Auth\Passwords\PasswordResetServiceProvider" => true
+                  "Illuminate\Translation\TranslationServiceProvider" => true
+                  "Illuminate\Validation\ValidationServiceProvider" => true
+                  "Laravel\Sail\SailServiceProvider" => true
+                  "Laravel\Tinker\TinkerServiceProvider" => true
+                ]
+                #deferredServices: []
+                #appPath: null
+                #databasePath: null
+                #langPath: null
+                #storagePath: null
+                #environmentPath: null
+                #environmentFile: ".env"
+                #isRunningInConsole: true
+                #namespace: "App\"
+                #absoluteCachePathPrefixes: array:2 [
+                  0 => "/"
+                  1 => "\"
+                ]
+                #resolved: array:181 [
+                  "events" => true
+                  "App\Console\Kernel" => true
+                  "Illuminate\Contracts\Console\Kernel" => true
+                  "Illuminate\Foundation\Bootstrap\LoadEnvironmentVariables" => true
+                  "Illuminate\Foundation\Bootstrap\LoadConfiguration" => true
+                  "Illuminate\Foundation\Bootstrap\HandleExceptions" => true
+                  "env" => true
+                  "Illuminate\Foundation\Bootstrap\RegisterFacades" => true
+                  "Illuminate\Foundation\PackageManifest" => true
+                  "Illuminate\Foundation\Bootstrap\SetRequestForConsole" => true
+                  "Illuminate\Foundation\Bootstrap\RegisterProviders" => true
+                  "Facade\Ignition\DumpRecorder\DumpRecorder" => true
+                  "flare.http" => true
+                  "Facade\FlareClient\Flare" => true
+                  "Facade\Ignition\Middleware\SetNotifierName" => true
+                  "Facade\Ignition\Middleware\AddEnvironmentInformation" => true
+                  "Facade\Ignition\LogRecorder\LogRecorder" => true
+                  "Facade\Ignition\Middleware\AddLogs" => true
+                  "Facade\Ignition\Middleware\AddDumps" => true
+                  "Facade\Ignition\QueryRecorder\QueryRecorder" => true
+                  "Facade\Ignition\Middleware\AddQueries" => true
+                  "Facade\IgnitionContracts\SolutionProviderRepository" => true
+                  "Facade\Ignition\Middleware\AddSolutions" => true
+                  "Facade\Ignition\JobRecorder\JobRecorder" => true
+                  "Facade\Ignition\Middleware\AddJobInformation" => true
+                  "Livewire\LivewireManager" => true
+                  "Illuminate\Foundation\Bootstrap\BootProviders" => true
+                  "db.factory" => true
+                  "db" => true
+                  "Illuminate\Testing\ParallelTesting" => true
+                  "view.engine.resolver" => true
+                  "files" => true
+                  "blade.compiler" => true
+                  "log" => true
+                  "queue" => true
+                  "router" => true
+                  "App\Http\Kernel" => true
+                  "Illuminate\Contracts\Http\Kernel" => true
+                  "cache" => true
+                  "Illuminate\Cache\RateLimiter" => true
+                  "Laravel\Jetstream\Console\InstallCommand" => true
+                  "Livewire\Commands\MakeLivewireCommand" => true
+                  "Livewire\Commands\MakeCommand" => true
+                  "Livewire\Commands\TouchCommand" => true
+                  "Livewire\Commands\CopyCommand" => true
+                  "Livewire\Commands\CpCommand" => true
+                  "Livewire\Commands\DeleteCommand" => true
+                  "Livewire\Commands\RmCommand" => true
+                  "Livewire\Commands\MoveCommand" => true
+                  "Livewire\Commands\MvCommand" => true
+                  "Livewire\Commands\StubsCommand" => true
+                  "Livewire\Commands\DiscoverCommand" => true
+                  "Livewire\Commands\S3CleanupCommand" => true
+                  "Livewire\Commands\PublishCommand" => true
+                  "NunoMaduro\Collision\Adapters\Laravel\Commands\TestCommand" => true
+                  "command.cache.clear" => true
+                  "command.cache.forget" => true
+                  "command.clear-compiled" => true
+                  "command.auth.resets.clear" => true
+                  "command.config.cache" => true
+                  "command.config.clear" => true
+                  "Illuminate\Database\Console\DbCommand" => true
+                  "command.db.prune" => true
+                  "command.db.wipe" => true
+                  "command.down" => true
+                  "command.environment" => true
+                  "command.event.cache" => true
+                  "command.event.clear" => true
+                  "command.event.list" => true
+                  "command.key.generate" => true
+                  "command.optimize" => true
+                  "command.optimize.clear" => true
+                  "command.package.discover" => true
+                  "command.queue.clear" => true
+                  "command.queue.failed" => true
+                  "command.queue.flush" => true
+                  "command.queue.forget" => true
+                  "queue.listener" => true
+                  "command.queue.listen" => true
+                  "command.queue.monitor" => true
+                  "command.queue.prune-batches" => true
+                  "command.queue.prune-failed-jobs" => true
+                  "cache.store" => true
+                  "command.queue.restart" => true
+                  "command.queue.retry" => true
+                  "command.queue.retry-batch" => true
+                  "App\Exceptions\Handler" => true
+                  "Illuminate\Contracts\Debug\ExceptionHandler" => true
+                  "queue.worker" => true
+                  "command.queue.work" => true
+                  "command.route.cache" => true
+                  "command.route.clear" => true
+                  "command.route.list" => true
+                  "command.schema.dump" => true
+                  "command.seed" => true
+                  "Illuminate\Console\Scheduling\ScheduleFinishCommand" => true
+                  "Illuminate\Console\Scheduling\ScheduleListCommand" => true
+                  "Illuminate\Console\Scheduling\ScheduleRunCommand" => true
+                  "Illuminate\Console\Scheduling\ScheduleTestCommand" => true
+                  "Illuminate\Console\Scheduling\ScheduleWorkCommand" => true
+                  "command.storage.link" => true
+                  "command.up" => true
+                  "command.view.cache" => true
+                  "command.view.clear" => true
+                  "composer" => true
+                  "command.cache.table" => true
+                  "command.cast.make" => true
+                  "command.channel.make" => true
+                  "command.component.make" => true
+                  "command.console.make" => true
+                  "command.controller.make" => true
+                  "command.event.generate" => true
+                  "command.event.make" => true
+                  "command.exception.make" => true
+                  "command.factory.make" => true
+                  "command.job.make" => true
+                  "command.listener.make" => true
+                  "command.mail.make" => true
+                  "command.middleware.make" => true
+                  "command.model.make" => true
+                  "command.notification.make" => true
+                  "command.notification.table" => true
+                  "command.observer.make" => true
+                  "command.policy.make" => true
+                  "command.provider.make" => true
+                  "command.queue.failed-table" => true
+                  "command.queue.table" => true
+                  "command.queue.batches-table" => true
+                  "command.request.make" => true
+                  "command.resource.make" => true
+                  "command.rule.make" => true
+                  "command.seeder.make" => true
+                  "command.session.table" => true
+                  "command.serve" => true
+                  "command.stub.publish" => true
+                  "command.test.make" => true
+                  "command.vendor.publish" => true
+                  "migration.repository" => true
+                  "migrator" => true
+                  "command.migrate" => true
+                  "command.migrate.fresh" => true
+                  "command.migrate.install" => true
+                  "command.migrate.refresh" => true
+                  "command.migrate.reset" => true
+                  "command.migrate.rollback" => true
+                  "command.migrate.status" => true
+                  "migration.creator" => true
+                  "command.migrate.make" => true
+                  "Laravel\Sail\Console\InstallCommand" => true
+                  "Laravel\Sail\Console\PublishCommand" => true
+                  "command.tinker" => true
+                  "Illuminate\Console\OutputStyle" => true
+                  "db.transactions" => true
+                  "Faker\Generator" => true
+                  "auth" => true
+                  "hash" => true
+                  "session" => true
+                  "session.store" => true
+                  "cookie" => true
+                  "view.finder" => true
+                  "view" => true
+                  "App\View\Components\AppLayout" => true
+                  "translation.loader" => true
+                  "translator" => true
+                  "App\View\Components\AdminLayout" => true
+                  "url" => true
+                  "App\View\Components\Common\InputSearch" => true
+                  "App\View\Components\Category\Table" => true
+                  "App\View\Components\Common\Table" => true
+                  "App\View\Components\Common\Table\Header" => true
+                  "App\View\Components\Common\Table\Header\Cell" => true
+                  "App\View\Components\Common\Table\Body" => true
+                  "App\View\Components\Common\Table\Body\Row" => true
+                  "App\View\Components\Common\Table\Body\Cell" => true
+                  "Illuminate\Foundation\Mix" => true
+                  "Illuminate\View\AnonymousComponent" => true
+                  "Livewire\LivewireComponentsFinder" => true
+                  "redirect" => true
+                  "Livewire\Redirector" => true
+                  "encrypter" => true
+                  "Livewire\LivewireTagCompiler" => true
+                ]
+                #bindings: array:209 [
+                  "Illuminate\Foundation\Mix" => array:2 [
+                    "concrete" => Closure($container, $parameters = []) {#67 …5}
+                    "shared" => true
+                  ]
+                  "Illuminate\Foundation\PackageManifest" => array:2 [
+                    "concrete" => Closure() {#4477 …4}
+                    "shared" => true
+                  ]
+                  "events" => array:2 [
+                    "concrete" => Closure($app) {#4379 …4}
+                    "shared" => true
+                  ]
+                  "log" => array:2 [
+                    "concrete" => Closure($app) {#7396 …4}
+                    "shared" => true
+                  ]
+                  "router" => array:2 [
+                    "concrete" => Closure($app) {#7401 …4}
+                    "shared" => true
+                  ]
+                  "url" => array:2 [
+                    "concrete" => Closure($app) {#3757 …4}
+                    "shared" => true
+                  ]
+                  "redirect" => array:2 [
+                    "concrete" => Closure() {#5704 …5}
+                    "shared" => false
+                  ]
+                  "Psr\Http\Message\ServerRequestInterface" => array:2 [
+                    "concrete" => Closure($app) {#5707 …4}
+                    "shared" => false
+                  ]
+                  "Psr\Http\Message\ResponseInterface" => array:2 [
+                    "concrete" => Closure() {#2971 …4}
+                    "shared" => false
+                  ]
+                  "Illuminate\Contracts\Routing\ResponseFactory" => array:2 [
+                    "concrete" => Closure($app) {#5678 …4}
+                    "shared" => true
+                  ]
+                  "Illuminate\Routing\Contracts\ControllerDispatcher" => array:2 [
+                    "concrete" => Closure($app) {#7237 …4}
+                    "shared" => true
+                  ]
+                  "Illuminate\Contracts\Http\Kernel" => array:2 [
+                    "concrete" => Closure($container, $parameters = []) {#7388 …5}
+                    "shared" => true
+                  ]
+                  "Illuminate\Contracts\Console\Kernel" => array:2 [
+                    "concrete" => Closure($container, $parameters = []) {#7386 …5}
+                    "shared" => true
+                  ]
+                  "Illuminate\Contracts\Debug\ExceptionHandler" => array:2 [
+                    "concrete" => Closure($container, $parameters = []) {#7384 …5}
+                    "shared" => true
+                  ]
+                  "env" => array:2 [
+                    "concrete" => Closure() {#5240 …5}
+                    "shared" => false
+                  ]
+                  "auth" => array:2 [
+                    "concrete" => Closure($app) {#5227 …4}
+                    "shared" => true
+                  ]
+                  "auth.driver" => array:2 [
+                    "concrete" => Closure($app) {#5243 …4}
+                    "shared" => true
+                  ]
+                  "Illuminate\Contracts\Auth\Authenticatable" => array:2 [
+                    "concrete" => Closure($app) {#5238 …4}
+                    "shared" => false
+                  ]
+                  "Illuminate\Contracts\Auth\Access\Gate" => array:2 [
+                    "concrete" => Closure($app) {#5241 …4}
+                    "shared" => true
+                  ]
+                  "Illuminate\Auth\Middleware\RequirePassword" => array:2 [
+                    "concrete" => Closure($app) {#1915 …4}
+                    "shared" => false
+                  ]
+                  "cookie" => array:2 [
+                    "concrete" => Closure($app) {#5242 …4}
+                    "shared" => true
+                  ]
+                  "db.factory" => array:2 [
+                    "concrete" => Closure($app) {#5246 …4}
+                    "shared" => true
+                  ]
+                  "db" => array:2 [
+                    "concrete" => Closure($app) {#5247 …4}
+                    "shared" => true
+                  ]
+                  "db.connection" => array:2 [
+                    "concrete" => Closure($app) {#5248 …4}
+                    "shared" => false
+                  ]
+                  "db.transactions" => array:2 [
+                    "concrete" => Closure($app) {#5249 …4}
+                    "shared" => true
+                  ]
+                  "Faker\Generator" => array:2 [
+                    "concrete" => Closure($app, $parameters) {#5250 …4}
+                    "shared" => true
+                  ]
+                  "Illuminate\Contracts\Queue\EntityResolver" => array:2 [
+                    "concrete" => Closure() {#5252 …4}
+                    "shared" => true
+                  ]
+                  "encrypter" => array:2 [
+                    "concrete" => Closure($app) {#5253 …4}
+                    "shared" => true
+                  ]
+                  "files" => array:2 [
+                    "concrete" => Closure() {#5257 …4}
+                    "shared" => true
+                  ]
+                  "filesystem" => array:2 [
+                    "concrete" => Closure($app) {#5256 …4}
+                    "shared" => true
+                  ]
+                  "filesystem.disk" => array:2 [
+                    "concrete" => Closure($app) {#5255 …4}
+                    "shared" => true
+                  ]
+                  "filesystem.cloud" => array:2 [
+                    "concrete" => Closure($app) {#5258 …4}
+                    "shared" => true
+                  ]
+                  "Illuminate\Testing\ParallelTesting" => array:2 [
+                    "concrete" => Closure() {#5262 …4}
+                    "shared" => true
+                  ]
+                  "Illuminate\Notifications\ChannelManager" => array:2 [
+                    "concrete" => Closure($app) {#5267 …4}
+                    "shared" => true
+                  ]
+                  "session" => array:2 [
+                    "concrete" => Closure($app) {#2631 …4}
+                    "shared" => true
+                  ]
+                  "session.store" => array:2 [
+                    "concrete" => Closure($app) {#5270 …4}
+                    "shared" => true
+                  ]
+                  "Illuminate\Session\Middleware\StartSession" => array:2 [
+                    "concrete" => Closure($app) {#5271 …4}
+                    "shared" => true
+                  ]
+                  "view" => array:2 [
+                    "concrete" => Closure($app) {#5272 …4}
+                    "shared" => true
+                  ]
+                  "view.finder" => array:2 [
+                    "concrete" => Closure($app) {#3667 …4}
+                    "shared" => false
+                  ]
+                  "blade.compiler" => array:2 [
+                    "concrete" => Closure($app) {#6343 …4}
+                    "shared" => true
+                  ]
+                  "view.engine.resolver" => array:2 [
+                    "concrete" => Closure() {#6430 …4}
+                    "shared" => true
+                  ]
+                  "Facade\IgnitionContracts\SolutionProviderRepository" => array:2 [
+                    "concrete" => Closure() {#5552 …4}
+                    "shared" => true
+                  ]
+                  "Facade\Ignition\ErrorPage\Renderer" => array:2 [
+                    "concrete" => Closure() {#3752 …4}
+                    "shared" => false
+                  ]
+                  "Whoops\Handler\HandlerInterface" => array:2 [
+                    "concrete" => Closure(Application $app) {#7328 …4}
+                    "shared" => false
+                  ]
+                  "Facade\Ignition\IgnitionConfig" => array:2 [
+                    "concrete" => Closure() {#4441 …4}
+                    "shared" => true
+                  ]
+                  "flare.http" => array:2 [
+                    "concrete" => Closure() {#3771 …4}
+                    "shared" => true
+                  ]
+                  "Facade\Ignition\Support\SentReports" => array:2 [
+                    "concrete" => Closure($container, $parameters = []) {#6520 …5}
+                    "shared" => true
+                  ]
+                  "Facade\FlareClient\Flare" => array:2 [
+                    "concrete" => Closure() {#6243 …4}
+                    "shared" => true
+                  ]
+                  "Facade\Ignition\DumpRecorder\DumpRecorder" => array:2 [
+                    "concrete" => Closure($container, $parameters = []) {#5058 …5}
+                    "shared" => true
+                  ]
+                  "Facade\Ignition\JobRecorder\JobRecorder" => array:2 [
+                    "concrete" => Closure($container, $parameters = []) {#107 …5}
+                    "shared" => true
+                  ]
+                  "Facade\Ignition\LogRecorder\LogRecorder" => array:2 [
+                    "concrete" => Closure(Application $app): LogRecorder {#5054 …5}
+                    "shared" => true
+                  ]
+                  "Facade\Ignition\QueryRecorder\QueryRecorder" => array:2 [
+                    "concrete" => Closure(Application $app): QueryRecorder {#7409 …5}
+                    "shared" => true
+                  ]
+                  "Asm89\Stack\CorsService" => array:2 [
+                    "concrete" => Closure($app) {#7309 …4}
+                    "shared" => true
+                  ]
+                  "agent" => array:2 [
+                    "concrete" => Closure($app) {#5617 …4}
+                    "shared" => true
+                  ]
+                  "Laravel\Fortify\Contracts\FailedPasswordConfirmationResponse" => array:2 [
+                    "concrete" => Closure($container, $parameters = []) {#5232 …5}
+                    "shared" => true
+                  ]
+                  "Laravel\Fortify\Contracts\FailedPasswordResetLinkRequestResponse" => array:2 [
+                    "concrete" => Closure($container, $parameters = []) {#2923 …5}
+                    "shared" => true
+                  ]
+                  "Laravel\Fortify\Contracts\FailedPasswordResetResponse" => array:2 [
+                    "concrete" => Closure($container, $parameters = []) {#1898 …5}
+                    "shared" => true
+                  ]
+                  "Laravel\Fortify\Contracts\FailedTwoFactorLoginResponse" => array:2 [
+                    "concrete" => Closure($container, $parameters = []) {#7394 …5}
+                    "shared" => true
+                  ]
+                  "Laravel\Fortify\Contracts\LockoutResponse" => array:2 [
+                    "concrete" => Closure($container, $parameters = []) {#5221 …5}
+                    "shared" => true
+                  ]
+                  "Laravel\Fortify\Contracts\LoginResponse" => array:2 [
+                    "concrete" => Closure($container, $parameters = []) {#5236 …5}
+                    "shared" => true
+                  ]
+                  "Laravel\Fortify\Contracts\TwoFactorLoginResponse" => array:2 [
+                    "concrete" => Closure($container, $parameters = []) {#5219 …5}
+                    "shared" => true
+                  ]
+                  "Laravel\Fortify\Contracts\LogoutResponse" => array:2 [
+                    "concrete" => Closure($container, $parameters = []) {#5220 …5}
+                    "shared" => true
+                  ]
+                  "Laravel\Fortify\Contracts\PasswordConfirmedResponse" => array:2 [
+                    "concrete" => Closure($container, $parameters = []) {#5223 …5}
+                    "shared" => true
+                  ]
+                  "Laravel\Fortify\Contracts\PasswordResetResponse" => array:2 [
+                    "concrete" => Closure($container, $parameters = []) {#5218 …5}
+                    "shared" => true
+                  ]
+                  "Laravel\Fortify\Contracts\PasswordUpdateResponse" => array:2 [
+                    "concrete" => Closure($container, $parameters = []) {#5215 …5}
+                    "shared" => true
+                  ]
+                  "Laravel\Fortify\Contracts\RegisterResponse" => array:2 [
+                    "concrete" => Closure($container, $parameters = []) {#5216 …5}
+                    "shared" => true
+                  ]
+                  "Laravel\Fortify\Contracts\SuccessfulPasswordResetLinkRequestResponse" => array:2 [
+                    "concrete" => Closure($container, $parameters = []) {#5217 …5}
+                    "shared" => true
+                  ]
+                  "Laravel\Fortify\Contracts\TwoFactorAuthenticationProvider" => array:2 [
+                    "concrete" => Closure($container, $parameters = []) {#5214 …5}
+                    "shared" => true
+                  ]
+                  "Illuminate\Contracts\Auth\StatefulGuard" => array:2 [
+                    "concrete" => Closure() {#5213 …4}
+                    "shared" => false
+                  ]
+                  "Livewire\LivewireManager" => array:2 [
+                    "concrete" => Closure($container, $parameters = []) {#3632 …5}
+                    "shared" => true
+                  ]
+                  "Livewire\LivewireComponentsFinder" => array:2 [
+                    "concrete" => Closure() {#5210 …5}
+                    "shared" => true
+                  ]
+                  "flare.logger" => array:2 [
+                    "concrete" => Closure($app) {#2768 …4}
+                    "shared" => true
+                  ]
+                  "command.flare:test" => array:2 [
+                    "concrete" => Closure($container, $parameters = []) {#2871 …5}
+                    "shared" => false
+                  ]
+                  "command.make:solution" => array:2 [
+                    "concrete" => Closure($container, $parameters = []) {#5195 …5}
+                    "shared" => false
+                  ]
+                  "command.make:solution-provider" => array:2 [
+                    "concrete" => Closure($container, $parameters = []) {#5194 …5}
+                    "shared" => false
+                  ]
+                  "queue" => array:2 [
+                    "concrete" => Closure($app) {#7389 …4}
+                    "shared" => true
+                  ]
+                  "queue.connection" => array:2 [
+                    "concrete" => Closure($app) {#5196 …4}
+                    "shared" => true
+                  ]
+                  "queue.worker" => array:2 [
+                    "concrete" => Closure($app) {#5197 …4}
+                    "shared" => true
+                  ]
+                  "queue.listener" => array:2 [
+                    "concrete" => Closure($app) {#5190 …4}
+                    "shared" => true
+                  ]
+                  "queue.failer" => array:2 [
+                    "concrete" => Closure($app) {#5189 …4}
+                    "shared" => true
+                  ]
+                  "Facade\Ignition\DumpRecorder\MultiDumpHandler" => array:2 [
+                    "concrete" => Closure() {#2888 …5}
+                    "shared" => true
+                  ]
+                  "Laravel\Fortify\Contracts\LoginViewResponse" => array:2 [
+                    "concrete" => Closure() {#778 …4}
+                    "shared" => true
+                  ]
+                  "Laravel\Fortify\Contracts\TwoFactorChallengeViewResponse" => array:2 [
+                    "concrete" => Closure() {#4275 …4}
+                    "shared" => true
+                  ]
+                  "Laravel\Fortify\Contracts\RegisterViewResponse" => array:2 [
+                    "concrete" => Closure() {#5551 …4}
+                    "shared" => true
+                  ]
+                  "Laravel\Fortify\Contracts\RequestPasswordResetLinkViewResponse" => array:2 [
+                    "concrete" => Closure() {#386 …4}
+                    "shared" => true
+                  ]
+                  "Laravel\Fortify\Contracts\ResetPasswordViewResponse" => array:2 [
+                    "concrete" => Closure() {#324 …4}
+                    "shared" => true
+                  ]
+                  "Laravel\Fortify\Contracts\VerifyEmailViewResponse" => array:2 [
+                    "concrete" => Closure() {#4281 …4}
+                    "shared" => true
+                  ]
+                  "Laravel\Fortify\Contracts\ConfirmPasswordViewResponse" => array:2 [
+                    "concrete" => Closure() {#4278 …4}
+                    "shared" => true
+                  ]
+                  "cache" => array:2 [
+                    "concrete" => Closure($app) {#5693 …4}
+                    "shared" => true
+                  ]
+                  "cache.store" => array:2 [
+                    "concrete" => Closure($app) {#1900 …4}
+                    "shared" => true
+                  ]
+                  "cache.psr6" => array:2 [
+                    "concrete" => Closure($app) {#1922 …4}
+                    "shared" => true
+                  ]
+                  "memcached.connector" => array:2 [
+                    "concrete" => Closure() {#5676 …4}
+                    "shared" => true
+                  ]
+                  "Illuminate\Cache\RateLimiter" => array:2 [
+                    "concrete" => Closure($app) {#6412 …4}
+                    "shared" => true
+                  ]
+                  "Laravel\Fortify\Contracts\CreatesNewUsers" => array:2 [
+                    "concrete" => Closure($container, $parameters = []) {#4946 …5}
+                    "shared" => true
+                  ]
+                  "Laravel\Fortify\Contracts\UpdatesUserProfileInformation" => array:2 [
+                    "concrete" => Closure($container, $parameters = []) {#3165 …5}
+                    "shared" => true
+                  ]
+                  "Laravel\Fortify\Contracts\UpdatesUserPasswords" => array:2 [
+                    "concrete" => Closure($container, $parameters = []) {#3516 …5}
+                    "shared" => true
+                  ]
+                  "Laravel\Fortify\Contracts\ResetsUserPasswords" => array:2 [
+                    "concrete" => Closure($container, $parameters = []) {#3585 …5}
+                    "shared" => true
+                  ]
+                  "Laravel\Jetstream\Contracts\DeletesUsers" => array:2 [
+                    "concrete" => Closure($container, $parameters = []) {#5569 …5}
+                    "shared" => true
+                  ]
+                  "Illuminate\Console\Scheduling\Schedule" => array:2 [
+                    "concrete" => Closure($app) {#5229 …4}
+                    "shared" => true
+                  ]
+                  "Illuminate\Broadcasting\BroadcastManager" => array:2 [
+                    "concrete" => Closure($app) {#5230 …4}
+                    "shared" => true
+                  ]
+                  "Illuminate\Contracts\Broadcasting\Broadcaster" => array:2 [
+                    "concrete" => Closure($app) {#3582 …4}
+                    "shared" => true
+                  ]
+                  "Illuminate\Bus\Dispatcher" => array:2 [
+                    "concrete" => Closure($app) {#2979 …4}
+                    "shared" => true
+                  ]
+                  "Illuminate\Bus\BatchRepository" => array:2 [
+                    "concrete" => Closure($container, $parameters = []) {#2975 …5}
+                    "shared" => true
+                  ]
+                  "Illuminate\Bus\DatabaseBatchRepository" => array:2 [
+                    "concrete" => Closure($app) {#2976 …4}
+                    "shared" => true
+                  ]
+                  "command.cache.clear" => array:2 [
+                    "concrete" => Closure($app) {#2966 …4}
+                    "shared" => true
+                  ]
+                  "command.cache.forget" => array:2 [
+                    "concrete" => Closure($app) {#2984 …4}
+                    "shared" => true
+                  ]
+                  "command.clear-compiled" => array:2 [
+                    "concrete" => Closure() {#2985 …4}
+                    "shared" => true
+                  ]
+                  "command.auth.resets.clear" => array:2 [
+                    "concrete" => Closure() {#2986 …4}
+                    "shared" => true
+                  ]
+                  "command.config.cache" => array:2 [
+                    "concrete" => Closure($app) {#2987 …4}
+                    "shared" => true
+                  ]
+                  "command.config.clear" => array:2 [
+                    "concrete" => Closure($app) {#2983 …4}
+                    "shared" => true
+                  ]
+                  "Illuminate\Database\Console\DbCommand" => array:2 [
+                    "concrete" => Closure($container, $parameters = []) {#2974 …5}
+                    "shared" => true
+                  ]
+                  "command.db.prune" => array:2 [
+                    "concrete" => Closure($app) {#2981 …4}
+                    "shared" => true
+                  ]
+                  "command.db.wipe" => array:2 [
+                    "concrete" => Closure() {#3500 …4}
+                    "shared" => true
+                  ]
+                  "command.down" => array:2 [
+                    "concrete" => Closure() {#3497 …4}
+                    "shared" => true
+                  ]
+                  "command.environment" => array:2 [
+                    "concrete" => Closure() {#3474 …4}
+                    "shared" => true
+                  ]
+                  "command.event.cache" => array:2 [
+                    "concrete" => Closure() {#3491 …4}
+                    "shared" => true
+                  ]
+                  "command.event.clear" => array:2 [
+                    "concrete" => Closure($app) {#3504 …4}
+                    "shared" => true
+                  ]
+                  "command.event.list" => array:2 [
+                    "concrete" => Closure() {#3469 …4}
+                    "shared" => true
+                  ]
+                  "command.key.generate" => array:2 [
+                    "concrete" => Closure() {#3477 …4}
+                    "shared" => true
+                  ]
+                  "command.optimize" => array:2 [
+                    "concrete" => Closure() {#3464 …4}
+                    "shared" => true
+                  ]
+                  "command.optimize.clear" => array:2 [
+                    "concrete" => Closure() {#3467 …4}
+                    "shared" => true
+                  ]
+                  "command.package.discover" => array:2 [
+                    "concrete" => Closure() {#3470 …4}
+                    "shared" => true
+                  ]
+                  "command.queue.clear" => array:2 [
+                    "concrete" => Closure() {#3460 …4}
+                    "shared" => true
+                  ]
+                  "command.queue.failed" => array:2 [
+                    "concrete" => Closure() {#3461 …4}
+                    "shared" => true
+                  ]
+                  "command.queue.flush" => array:2 [
+                    "concrete" => Closure() {#3472 …4}
+                    "shared" => true
+                  ]
+                  "command.queue.forget" => array:2 [
+                    "concrete" => Closure() {#3418 …4}
+                    "shared" => true
+                  ]
+                  "command.queue.listen" => array:2 [
+                    "concrete" => Closure($app) {#3471 …4}
+                    "shared" => true
+                  ]
+                  "command.queue.monitor" => array:2 [
+                    "concrete" => Closure($app) {#3473 …4}
+                    "shared" => true
+                  ]
+                  "command.queue.prune-batches" => array:2 [
+                    "concrete" => Closure() {#3465 …4}
+                    "shared" => true
+                  ]
+                  "command.queue.prune-failed-jobs" => array:2 [
+                    "concrete" => Closure() {#3463 …4}
+                    "shared" => true
+                  ]
+                  "command.queue.restart" => array:2 [
+                    "concrete" => Closure($app) {#3462 …4}
+                    "shared" => true
+                  ]
+                  "command.queue.retry" => array:2 [
+                    "concrete" => Closure() {#3453 …4}
+                    "shared" => true
+                  ]
+                  "command.queue.retry-batch" => array:2 [
+                    "concrete" => Closure() {#3454 …4}
+                    "shared" => true
+                  ]
+                  "command.queue.work" => array:2 [
+                    "concrete" => Closure($app) {#3457 …4}
+                    "shared" => true
+                  ]
+                  "command.route.cache" => array:2 [
+                    "concrete" => Closure($app) {#3456 …4}
+                    "shared" => true
+                  ]
+                  "command.route.clear" => array:2 [
+                    "concrete" => Closure($app) {#3455 …4}
+                    "shared" => true
+                  ]
+                  "command.route.list" => array:2 [
+                    "concrete" => Closure($app) {#3444 …4}
+                    "shared" => true
+                  ]
+                  "command.schema.dump" => array:2 [
+                    "concrete" => Closure() {#3445 …4}
+                    "shared" => true
+                  ]
+                  "command.seed" => array:2 [
+                    "concrete" => Closure($app) {#3452 …4}
+                    "shared" => true
+                  ]
+                  "Illuminate\Console\Scheduling\ScheduleFinishCommand" => array:2 [
+                    "concrete" => Closure($container, $parameters = []) {#3451 …5}
+                    "shared" => true
+                  ]
+                  "Illuminate\Console\Scheduling\ScheduleListCommand" => array:2 [
+                    "concrete" => Closure($container, $parameters = []) {#3450 …5}
+                    "shared" => true
+                  ]
+                  "Illuminate\Console\Scheduling\ScheduleRunCommand" => array:2 [
+                    "concrete" => Closure($container, $parameters = []) {#3449 …5}
+                    "shared" => true
+                  ]
+                  "Illuminate\Console\Scheduling\ScheduleTestCommand" => array:2 [
+                    "concrete" => Closure($container, $parameters = []) {#3448 …5}
+                    "shared" => true
+                  ]
+                  "Illuminate\Console\Scheduling\ScheduleWorkCommand" => array:2 [
+                    "concrete" => Closure($container, $parameters = []) {#3447 …5}
+                    "shared" => true
+                  ]
+                  "command.storage.link" => array:2 [
+                    "concrete" => Closure() {#3513 …4}
+                    "shared" => true
+                  ]
+                  "command.up" => array:2 [
+                    "concrete" => Closure() {#3443 …4}
+                    "shared" => true
+                  ]
+                  "command.view.cache" => array:2 [
+                    "concrete" => Closure() {#3442 …4}
+                    "shared" => true
+                  ]
+                  "command.view.clear" => array:2 [
+                    "concrete" => Closure($app) {#3430 …4}
+                    "shared" => true
+                  ]
+                  "command.cache.table" => array:2 [
+                    "concrete" => Closure($app) {#3440 …4}
+                    "shared" => true
+                  ]
+                  "command.cast.make" => array:2 [
+                    "concrete" => Closure($app) {#3439 …4}
+                    "shared" => true
+                  ]
+                  "command.channel.make" => array:2 [
+                    "concrete" => Closure($app) {#3437 …4}
+                    "shared" => true
+                  ]
+                  "command.component.make" => array:2 [
+                    "concrete" => Closure($app) {#3435 …4}
+                    "shared" => true
+                  ]
+                  "command.console.make" => array:2 [
+                    "concrete" => Closure($app) {#3434 …4}
+                    "shared" => true
+                  ]
+                  "command.controller.make" => array:2 [
+                    "concrete" => Closure($app) {#3432 …4}
+                    "shared" => true
+                  ]
+                  "command.event.generate" => array:2 [
+                    "concrete" => Closure() {#3431 …4}
+                    "shared" => true
+                  ]
+                  "command.event.make" => array:2 [
+                    "concrete" => Closure($app) {#3492 …4}
+                    "shared" => true
+                  ]
+                  "command.exception.make" => array:2 [
+                    "concrete" => Closure($app) {#3505 …4}
+                    "shared" => true
+                  ]
+                  "command.factory.make" => array:2 [
+                    "concrete" => Closure($app) {#3426 …4}
+                    "shared" => true
+                  ]
+                  "command.job.make" => array:2 [
+                    "concrete" => Closure($app) {#3425 …4}
+                    "shared" => true
+                  ]
+                  "command.listener.make" => array:2 [
+                    "concrete" => Closure($app) {#3424 …4}
+                    "shared" => true
+                  ]
+                  "command.mail.make" => array:2 [
+                    "concrete" => Closure($app) {#3420 …4}
+                    "shared" => true
+                  ]
+                  "command.middleware.make" => array:2 [
+                    "concrete" => Closure($app) {#3413 …4}
+                    "shared" => true
+                  ]
+                  "command.model.make" => array:2 [
+                    "concrete" => Closure($app) {#3410 …4}
+                    "shared" => true
+                  ]
+                  "command.notification.make" => array:2 [
+                    "concrete" => Closure($app) {#3676 …4}
+                    "shared" => true
+                  ]
+                  "command.notification.table" => array:2 [
+                    "concrete" => Closure($app) {#3642 …4}
+                    "shared" => true
+                  ]
+                  "command.observer.make" => array:2 [
+                    "concrete" => Closure($app) {#4619 …4}
+                    "shared" => true
+                  ]
+                  "command.policy.make" => array:2 [
+                    "concrete" => Closure($app) {#7184 …4}
+                    "shared" => true
+                  ]
+                  "command.provider.make" => array:2 [
+                    "concrete" => Closure($app) {#2843 …4}
+                    "shared" => true
+                  ]
+                  "command.queue.failed-table" => array:2 [
+                    "concrete" => Closure($app) {#5689 …4}
+                    "shared" => true
+                  ]
+                  "command.queue.table" => array:2 [
+                    "concrete" => Closure($app) {#7188 …4}
+                    "shared" => true
+                  ]
+                  "command.queue.batches-table" => array:2 [
+                    "concrete" => Closure($app) {#7196 …4}
+                    "shared" => true
+                  ]
+                  "command.request.make" => array:2 [
+                    "concrete" => Closure($app) {#4643 …4}
+                    "shared" => true
+                  ]
+                  "command.resource.make" => array:2 [
+                    "concrete" => Closure($app) {#6378 …4}
+                    "shared" => true
+                  ]
+                  "command.rule.make" => array:2 [
+                    "concrete" => Closure($app) {#5380 …4}
+                    "shared" => true
+                  ]
+                  "command.seeder.make" => array:2 [
+                    "concrete" => Closure($app) {#6540 …4}
+                    "shared" => true
+                  ]
+                  "command.session.table" => array:2 [
+                    "concrete" => Closure($app) {#7202 …4}
+                    "shared" => true
+                  ]
+                  "command.serve" => array:2 [
+                    "concrete" => Closure() {#4726 …4}
+                    "shared" => true
+                  ]
+                  "command.stub.publish" => array:2 [
+                    "concrete" => Closure() {#4713 …4}
+                    "shared" => true
+                  ]
+                  "command.test.make" => array:2 [
+                    "concrete" => Closure($app) {#6538 …4}
+                    "shared" => true
+                  ]
+                  "command.vendor.publish" => array:2 [
+                    "concrete" => Closure($app) {#4683 …4}
+                    "shared" => true
+                  ]
+                  "migration.repository" => array:2 [
+                    "concrete" => Closure($app) {#4480 …4}
+                    "shared" => true
+                  ]
+                  "migrator" => array:2 [
+                    "concrete" => Closure($app) {#5186 …4}
+                    "shared" => true
+                  ]
+                  "migration.creator" => array:2 [
+                    "concrete" => Closure($app) {#2798 …4}
+                    "shared" => true
+                  ]
+                  "command.migrate" => array:2 [
+                    "concrete" => Closure($app) {#2869 …4}
+                    "shared" => true
+                  ]
+                  "command.migrate.fresh" => array:2 [
+                    "concrete" => Closure() {#2804 …4}
+                    "shared" => true
+                  ]
+                  "command.migrate.install" => array:2 [
+                    "concrete" => Closure($app) {#5198 …4}
+                    "shared" => true
+                  ]
+                  "command.migrate.refresh" => array:2 [
+                    "concrete" => Closure() {#765 …4}
+                    "shared" => true
+                  ]
+                  "command.migrate.reset" => array:2 [
+                    "concrete" => Closure($app) {#383 …4}
+                    "shared" => true
+                  ]
+                  "command.migrate.rollback" => array:2 [
+                    "concrete" => Closure($app) {#5173 …4}
+                    "shared" => true
+                  ]
+                  "command.migrate.status" => array:2 [
+                    "concrete" => Closure($app) {#310 …4}
+                    "shared" => true
+                  ]
+                  "command.migrate.make" => array:2 [
+                    "concrete" => Closure($app) {#2813 …4}
+                    "shared" => true
+                  ]
+                  "composer" => array:2 [
+                    "concrete" => Closure($app) {#4276 …4}
+                    "shared" => true
+                  ]
+                  "hash" => array:2 [
+                    "concrete" => Closure($app) {#2847 …4}
+                    "shared" => true
+                  ]
+                  "hash.driver" => array:2 [
+                    "concrete" => Closure($app) {#387 …4}
+                    "shared" => true
+                  ]
+                  "mail.manager" => array:2 [
+                    "concrete" => Closure($app) {#5205 …4}
+                    "shared" => true
+                  ]
+                  "mailer" => array:2 [
+                    "concrete" => Closure($app) {#7285 …4}
+                    "shared" => false
+                  ]
+                  "Illuminate\Mail\Markdown" => array:2 [
+                    "concrete" => Closure($app) {#2887 …4}
+                    "shared" => true
+                  ]
+                  "Illuminate\Contracts\Pipeline\Hub" => array:2 [
+                    "concrete" => Closure($container, $parameters = []) {#6376 …5}
+                    "shared" => true
+                  ]
+                  "redis" => array:2 [
+                    "concrete" => Closure($app) {#4728 …4}
+                    "shared" => true
+                  ]
+                  "redis.connection" => array:2 [
+                    "concrete" => Closure($app) {#6553 …4}
+                    "shared" => false
+                  ]
+                  "auth.password" => array:2 [
+                    "concrete" => Closure($app) {#1829 …4}
+                    "shared" => true
+                  ]
+                  "auth.password.broker" => array:2 [
+                    "concrete" => Closure($app) {#6360 …4}
+                    "shared" => false
+                  ]
+                  "translation.loader" => array:2 [
+                    "concrete" => Closure($app) {#5691 …4}
+                    "shared" => true
+                  ]
+                  "translator" => array:2 [
+                    "concrete" => Closure($app) {#5695 …4}
+                    "shared" => true
+                  ]
+                  "validation.presence" => array:2 [
+                    "concrete" => Closure($app) {#5672 …4}
+                    "shared" => true
+                  ]
+                  "Illuminate\Contracts\Validation\UncompromisedVerifier" => array:2 [
+                    "concrete" => Closure($app) {#7385 …4}
+                    "shared" => true
+                  ]
+                  "validator" => array:2 [
+                    "concrete" => Closure($app) {#3441 …4}
+                    "shared" => true
+                  ]
+                  "command.tinker" => array:2 [
+                    "concrete" => Closure() {#3438 …4}
+                    "shared" => true
+                  ]
+                  "Illuminate\Console\OutputStyle" => array:2 [
+                    "concrete" => Closure() {#135 …5}
+                    "shared" => false
+                  ]
+                ]
+                #methodBindings: []
+                #instances: array:147 [
+                  "path" => "/home/andy/Projects/ecommerce/app"
+                  "path.base" => "/home/andy/Projects/ecommerce"
+                  "path.lang" => "/home/andy/Projects/ecommerce/resources/lang"
+                  "path.config" => "/home/andy/Projects/ecommerce/config"
+                  "path.public" => "/home/andy/Projects/ecommerce/public"
+                  "path.storage" => "/home/andy/Projects/ecommerce/storage"
+                  "path.database" => "/home/andy/Projects/ecommerce/database"
+                  "path.resources" => "/home/andy/Projects/ecommerce/resources"
+                  "path.bootstrap" => "/home/andy/Projects/ecommerce/bootstrap"
+                  "app" => Illuminate\Foundation\Application {#4487}
+                  "Illuminate\Container\Container" => Illuminate\Foundation\Application {#4487}
+                  "events" => Illuminate\Events\Dispatcher {#2831}
+                  "Illuminate\Contracts\Console\Kernel" => App\Console\Kernel {#6485}
+                  "config" => Illuminate\Config\Repository {#7326
+                    #items: array:22 [ …22]
+                  }
+                  "Illuminate\Foundation\PackageManifest" => Illuminate\Foundation\PackageManifest {#102
+                    +files: Illuminate\Filesystem\Filesystem {#5226}
+                    +basePath: "/home/andy/Projects/ecommerce"
+                    +vendorPath: "/home/andy/Projects/ecommerce/vendor"
+                    +manifestPath: "/home/andy/Projects/ecommerce/bootstrap/cache/packages.php"
+                    +manifest: array:11 [ …11]
+                  }
+                  "request" => Illuminate\Http\Request {#5244
+                    #json: null
+                    #convertedFiles: null
+                    #userResolver: null
+                    #routeResolver: null
+                    +attributes: Symfony\Component\HttpFoundation\ParameterBag {#3670 …1}
+                    +request: Symfony\Component\HttpFoundation\InputBag {#1861 …1}
+                    +query: Symfony\Component\HttpFoundation\InputBag {#5222 …1}
+                    +server: Symfony\Component\HttpFoundation\ServerBag {#5225 …1}
+                    +files: Symfony\Component\HttpFoundation\FileBag {#5235 …1}
+                    +cookies: Symfony\Component\HttpFoundation\InputBag {#5237 …1}
+                    +headers: Symfony\Component\HttpFoundation\HeaderBag {#5233 …2}
+                    #content: null
+                    #languages: null
+                    #charsets: null
+                    #encodings: null
+                    #acceptableContentTypes: null
+                    #pathInfo: "/"
+                    #requestUri: "/"
+                    #baseUrl: ""
+                    #basePath: null
+                    #method: "GET"
+                    #format: null
+                    #session: null
+                    #locale: null
+                    #defaultLocale: "en"
+                    -preferredFormat: null
+                    -isHostValid: true
+                    -isForwardedValid: true
+                    -isSafeContentPreferred: null
+                    basePath: ""
+                    format: "html"
+                  }
+                  "Illuminate\Testing\LoggedExceptionCollection" => Illuminate\Testing\LoggedExceptionCollection {#365
+                    #items: []
+                    #escapeWhenCastingToString: false
+                  }
+                  "Facade\Ignition\DumpRecorder\DumpRecorder" => Facade\Ignition\DumpRecorder\DumpRecorder {#5047
+                    #dumps: []
+                    #app: Illuminate\Foundation\Application {#4487}
+                  }
+                  "flare.http" => Facade\FlareClient\Http\Client {#286
+                    -apiToken: null
+                    -apiSecret: null
+                    -baseUrl: "https://reporting.flareapp.io/api"
+                    -timeout: 10
+                  }
+                  "Facade\FlareClient\Flare" => Facade\FlareClient\Flare {#7413
+                    #client: Facade\FlareClient\Http\Client {#286}
+                    #api: Facade\FlareClient\Api {#7392 …2}
+                    #middleware: array:10 [ …10]
+                    #recorder: Facade\FlareClient\Glows\Recorder {#359 …1}
+                    #applicationPath: "/home/andy/Projects/ecommerce"
+                    #container: Illuminate\Foundation\Application {#4487}
+                    #contextDetector: Facade\Ignition\Context\LaravelContextDetector {#177}
+                    #previousExceptionHandler: null
+                    #previousErrorHandler: null
+                    #determineVersionCallable: null
+                    #reportErrorLevels: null
+                    #filterExceptionsCallable: null
+                    -messageLevel: null
+                    -stage: "testing"
+                    -userProvidedContext: []
+                  }
+                  "Facade\Ignition\LogRecorder\LogRecorder" => Facade\Ignition\LogRecorder\LogRecorder {#5492
+                    #logMessages: []
+                    #app: Illuminate\Foundation\Application {#4487}
+                    -maxLogs: 200
+                  }
+                  "Facade\Ignition\QueryRecorder\QueryRecorder" => Facade\Ignition\QueryRecorder\QueryRecorder {#295
+                    #queries: array:46 [ …46]
+                    #app: Illuminate\Foundation\Application {#4487}
+                    -reportBindings: true
+                    -maxQueries: 200
+                  }
+                  "Facade\IgnitionContracts\SolutionProviderRepository" => Facade\Ignition\SolutionProviders\SolutionProviderRepository {#7383
+                    #solutionProviders: Illuminate\Support\Collection {#3711 …2}
+                  }
+                  "Facade\Ignition\JobRecorder\JobRecorder" => Facade\Ignition\JobRecorder\JobRecorder {#5228
+                    #app: Illuminate\Foundation\Application {#4487}
+                    #job: null
+                  }
+                  "Livewire\LivewireManager" => Livewire\LivewireManager {#5206
+                    #listeners: array:17 [ …17]
+                    #componentAliases: array:6 [ …6]
+                    #queryParamsForTesting: []
+                    #shouldDisableBackButtonCache: true
+                    #persistentMiddleware: array:8 [ …8]
+                  }
+                  "db.factory" => Illuminate\Database\Connectors\ConnectionFactory {#5224
+                    #container: Illuminate\Foundation\Application {#4487}
+                  }
+                  "db" => Illuminate\Database\DatabaseManager {#4377
+                    #app: Illuminate\Foundation\Application {#4487}
+                    #factory: Illuminate\Database\Connectors\ConnectionFactory {#5224}
+                     …3
+                  }
+                  "Illuminate\Testing\ParallelTesting" => Illuminate\Testing\ParallelTesting {#2767 …8}
+                  "view.engine.resolver" => Illuminate\View\Engines\EngineResolver {#2774}
+                  "files" => Illuminate\Filesystem\Filesystem {#4669}
+                  "blade.compiler" => Illuminate\View\Compilers\BladeCompiler {#2810
+                    #extensions: []
+                    #customDirectives: array:6 [
+                      "js" => array:2 [ …2]
+                      "this" => array:2 [ …2]
+                      "entangle" => array:2 [ …2]
+                      "livewire" => array:2 [ …2]
+                      "livewireStyles" => array:2 [ …2]
+                      "livewireScripts" => array:2 [ …2]
+                    ]
+                    #conditions: []
+                    #precompilers: array:1 [
+                      0 => Closure($string) {#4674 …4}
+                    ]
+                    #path: "/tmp/laravel-bladezqGjaY.blade.php"
+                    #compilers: array:3 [
+                      0 => "Extensions"
+                      1 => "Statements"
+                      2 => "Echos"
+                    ]
+                    #rawTags: array:2 [
+                      0 => "{!!"
+                      1 => "!!}"
+                    ]
+                    #contentTags: array:2 [
+                      0 => "{{"
+                      1 => "}}"
+                    ]
+                    #escapedTags: array:2 [
+                      0 => "{{{"
+                      1 => "}}}"
+                    ]
+                    #echoFormat: "e(%s)"
+                    #footer: []
+                    #rawBlocks: []
+                    #classComponentAliases: array:30 [
+                      "dynamic-component" => "Illuminate\View\DynamicComponent"
+                      "jet-action-message" => "jetstream::components.action-message"
+                      "jet-action-section" => "jetstream::components.action-section"
+                      "jet-application-logo" => "jetstream::components.application-logo"
+                      "jet-application-mark" => "jetstream::components.application-mark"
+                      "jet-authentication-card" => "jetstream::components.authentication-card"
+                      "jet-authentication-card-logo" => "jetstream::components.authentication-card-logo"
+                      "jet-banner" => "jetstream::components.banner"
+                      "jet-button" => "jetstream::components.button"
+                      "jet-confirmation-modal" => "jetstream::components.confirmation-modal"
+                      "jet-confirms-password" => "jetstream::components.confirms-password"
+                      "jet-danger-button" => "jetstream::components.danger-button"
+                      "jet-dialog-modal" => "jetstream::components.dialog-modal"
+                      "jet-dropdown" => "jetstream::components.dropdown"
+                      "jet-dropdown-link" => "jetstream::components.dropdown-link"
+                      "jet-form-section" => "jetstream::components.form-section"
+                      "jet-input" => "jetstream::components.input"
+                      "jet-checkbox" => "jetstream::components.checkbox"
+                      "jet-input-error" => "jetstream::components.input-error"
+                      "jet-label" => "jetstream::components.label"
+                      "jet-modal" => "jetstream::components.modal"
+                      "jet-nav-link" => "jetstream::components.nav-link"
+                      "jet-responsive-nav-link" => "jetstream::components.responsive-nav-link"
+                      "jet-responsive-switchable-team" => "jetstream::components.responsive-switchable-team"
+                      "jet-secondary-button" => "jetstream::components.secondary-button"
+                      "jet-section-border" => "jetstream::components.section-border"
+                      "jet-section-title" => "jetstream::components.section-title"
+                      "jet-switchable-team" => "jetstream::components.switchable-team"
+                      "jet-validation-errors" => "jetstream::components.validation-errors"
+                      "jet-welcome" => "jetstream::components.welcome"
+                    ]
+                    #classComponentNamespaces: []
+                    #compilesComponentTags: true
+                    #files: Illuminate\Filesystem\Filesystem {#4669}
+                    #cachePath: "/home/andy/Projects/ecommerce/storage/framework/views"
+                    #firstCaseInSwitch: true
+                    #echoHandlers: []
+                    -encodingOptions: 15
+                    #lastSection: null
+                    #forElseCounter: 0
+                  }
+                  "log" => Illuminate\Log\LogManager {#766 …5}
+                  "queue" => Illuminate\Queue\QueueManager {#5182 …3}
+                  "router" => Illuminate\Routing\Router {#2889 …11}
+                  "Illuminate\Contracts\Http\Kernel" => App\Http\Kernel {#6337 …7}
+                  "date" => Illuminate\Support\DateFactory {#4740}
+                  "cache" => Illuminate\Cache\CacheManager {#6532 …3}
+                  "Illuminate\Cache\RateLimiter" => Illuminate\Cache\RateLimiter {#3677 …2}
+                  "command.cache.clear" => Illuminate\Cache\Console\ClearCommand {#1890 …26}
+                  "command.cache.forget" => Illuminate\Cache\Console\ForgetCommand {#2623 …25}
+                  "command.clear-compiled" => Illuminate\Foundation\Console\ClearCompiledCommand {#2610 …24}
+                  "command.auth.resets.clear" => Illuminate\Auth\Console\ClearResetsCommand {#2617 …24}
+                  "command.config.cache" => Illuminate\Foundation\Console\ConfigCacheCommand {#2614 …25}
+                  "command.config.clear" => Illuminate\Foundation\Console\ConfigClearCommand {#2612 …25}
+                  "Illuminate\Database\Console\DbCommand" => Illuminate\Database\Console\DbCommand {#2606 …24}
+                  "command.db.prune" => Illuminate\Database\Console\PruneCommand {#2555 …24}
+                  "command.db.wipe" => Illuminate\Database\Console\WipeCommand {#2602 …24}
+                  "command.down" => Illuminate\Foundation\Console\DownCommand {#2596 …24}
+                  "command.environment" => Illuminate\Foundation\Console\EnvironmentCommand {#2588 …24}
+                  "command.event.cache" => Illuminate\Foundation\Console\EventCacheCommand {#2586 …24}
+                  "command.event.clear" => Illuminate\Foundation\Console\EventClearCommand {#2584 …25}
+                  "command.event.list" => Illuminate\Foundation\Console\EventListCommand {#2578 …24}
+                  "command.key.generate" => Illuminate\Foundation\Console\KeyGenerateCommand {#2580 …24}
+                  "command.optimize" => Illuminate\Foundation\Console\OptimizeCommand {#2577 …24}
+                  "command.optimize.clear" => Illuminate\Foundation\Console\OptimizeClearCommand {#2575 …24}
+                  "command.package.discover" => Illuminate\Foundation\Console\PackageDiscoverCommand {#2573 …24}
+                  "command.queue.clear" => Illuminate\Queue\Console\ClearCommand {#2571 …24}
+                  "command.queue.failed" => Illuminate\Queue\Console\ListFailedCommand {#2629 …25}
+                  "command.queue.flush" => Illuminate\Queue\Console\FlushFailedCommand {#2564 …24}
+                  "command.queue.forget" => Illuminate\Queue\Console\ForgetFailedCommand {#2562 …24}
+                  "queue.listener" => Illuminate\Queue\Listener {#2558 …5}
+                  "command.queue.listen" => Illuminate\Queue\Console\ListenCommand {#2559 …25}
+                  "command.queue.monitor" => Illuminate\Queue\Console\MonitorCommand {#2545 …27}
+                  "command.queue.prune-batches" => Illuminate\Queue\Console\PruneBatchesCommand {#2534 …24}
+                  "command.queue.prune-failed-jobs" => Illuminate\Queue\Console\PruneFailedJobsCommand {#2537 …24}
+                  "cache.store" => Illuminate\Cache\Repository {#5499 …3}
+                  "command.queue.restart" => Illuminate\Queue\Console\RestartCommand {#2533 …25}
+                  "command.queue.retry" => Illuminate\Queue\Console\RetryCommand {#2530 …24}
+                  "command.queue.retry-batch" => Illuminate\Queue\Console\RetryBatchCommand {#2527 …24}
+                  "Illuminate\Contracts\Debug\ExceptionHandler" => App\Exceptions\Handler {#2514 …7}
+                  "queue.worker" => Illuminate\Queue\Worker {#2519 …9}
+                  "command.queue.work" => Illuminate\Queue\Console\WorkCommand {#2524 …26}
+                  "command.route.cache" => Illuminate\Foundation\Console\RouteCacheCommand {#2499 …25}
+                  "command.route.clear" => Illuminate\Foundation\Console\RouteClearCommand {#2492 …25}
+                  "command.route.list" => Illuminate\Foundation\Console\RouteListCommand {#2496 …27}
+                  "command.schema.dump" => Illuminate\Database\Console\DumpCommand {#2485 …24}
+                  "command.seed" => Illuminate\Database\Console\Seeds\SeedCommand {#2480 …25}
+                  "Illuminate\Console\Scheduling\ScheduleFinishCommand" => Illuminate\Console\Scheduling\ScheduleFinishCommand {#2464 …24}
+                  "Illuminate\Console\Scheduling\ScheduleListCommand" => Illuminate\Console\Scheduling\ScheduleListCommand {#2468 …24}
+                  "Illuminate\Console\Scheduling\ScheduleRunCommand" => Illuminate\Console\Scheduling\ScheduleRunCommand {#2457 …29}
+                  "Illuminate\Console\Scheduling\ScheduleTestCommand" => Illuminate\Console\Scheduling\ScheduleTestCommand {#2462 …24}
+                  "Illuminate\Console\Scheduling\ScheduleWorkCommand" => Illuminate\Console\Scheduling\ScheduleWorkCommand {#2460 …24}
+                  "command.storage.link" => Illuminate\Foundation\Console\StorageLinkCommand {#2473 …24}
+                  "command.up" => Illuminate\Foundation\Console\UpCommand {#2456 …24}
+                  "command.view.cache" => Illuminate\Foundation\Console\ViewCacheCommand {#2454 …24}
+                  "command.view.clear" => Illuminate\Foundation\Console\ViewClearCommand {#2447 …25}
+                  "composer" => Illuminate\Support\Composer {#2449 …2}
+                  "command.cache.table" => Illuminate\Cache\Console\CacheTableCommand {#2450 …26}
+                  "command.cast.make" => Illuminate\Foundation\Console\CastMakeCommand {#2443 …27}
+                  "command.channel.make" => Illuminate\Foundation\Console\ChannelMakeCommand {#2444 …27}
+                  "command.component.make" => Illuminate\Foundation\Console\ComponentMakeCommand {#2441 …27}
+                  "command.console.make" => Illuminate\Foundation\Console\ConsoleMakeCommand {#2436 …27}
+                  "command.controller.make" => Illuminate\Routing\Console\ControllerMakeCommand {#2430 …27}
+                  "command.event.generate" => Illuminate\Foundation\Console\EventGenerateCommand {#2418 …24}
+                  "command.event.make" => Illuminate\Foundation\Console\EventMakeCommand {#2416 …27}
+                  "command.exception.make" => Illuminate\Foundation\Console\ExceptionMakeCommand {#2413 …27}
+                  "command.factory.make" => Illuminate\Database\Console\Factories\FactoryMakeCommand {#2407 …27}
+                  "command.job.make" => Illuminate\Foundation\Console\JobMakeCommand {#2402 …27}
+                  "command.listener.make" => Illuminate\Foundation\Console\ListenerMakeCommand {#2381 …27}
+                  "command.mail.make" => Illuminate\Foundation\Console\MailMakeCommand {#2392 …27}
+                  "command.middleware.make" => Illuminate\Routing\Console\MiddlewareMakeCommand {#2384 …27}
+                  "command.model.make" => Illuminate\Foundation\Console\ModelMakeCommand {#2378 …27}
+                  "command.notification.make" => Illuminate\Foundation\Console\NotificationMakeCommand {#2363 …27}
+                  "command.notification.table" => Illuminate\Notifications\Console\NotificationTableCommand {#2331 …26}
+                  "command.observer.make" => Illuminate\Foundation\Console\ObserverMakeCommand {#2333 …27}
+                  "command.policy.make" => Illuminate\Foundation\Console\PolicyMakeCommand {#2352 …27}
+                  "command.provider.make" => Illuminate\Foundation\Console\ProviderMakeCommand {#2347 …27}
+                  "command.queue.failed-table" => Illuminate\Queue\Console\FailedTableCommand {#2344 …26}
+                  "command.queue.table" => Illuminate\Queue\Console\TableCommand {#2342 …26}
+                  "command.queue.batches-table" => Illuminate\Queue\Console\BatchesTableCommand {#2335 …26}
+                  "command.request.make" => Illuminate\Foundation\Console\RequestMakeCommand {#2337 …27}
+                  "command.resource.make" => Illuminate\Foundation\Console\ResourceMakeCommand {#2329 …27}
+                  "command.rule.make" => Illuminate\Foundation\Console\RuleMakeCommand {#2325 …27}
+                  "command.seeder.make" => Illuminate\Database\Console\Seeds\SeederMakeCommand {#2318 …27}
+                  "command.session.table" => Illuminate\Session\Console\SessionTableCommand {#2314 …26}
+                  "command.serve" => Illuminate\Foundation\Console\ServeCommand {#2316 …25}
+                  "command.stub.publish" => Illuminate\Foundation\Console\StubPublishCommand {#2293 …24}
+                  "command.test.make" => Illuminate\Foundation\Console\TestMakeCommand {#2291 …27}
+                  "command.vendor.publish" => Illuminate\Foundation\Console\VendorPublishCommand {#2285 …27}
+                  "migration.repository" => Illuminate\Database\Migrations\DatabaseMigrationRepository {#2281 …3}
+                  "migrator" => Illuminate\Database\Migrations\Migrator {#2278 …7}
+                  "command.migrate" => Illuminate\Database\Console\Migrations\MigrateCommand {#2280 …26}
+                  "command.migrate.fresh" => Illuminate\Database\Console\Migrations\FreshCommand {#2270 …24}
+                  "command.migrate.install" => Illuminate\Database\Console\Migrations\InstallCommand {#2258 …25}
+                  "command.migrate.refresh" => Illuminate\Database\Console\Migrations\RefreshCommand {#2256 …24}
+                  "command.migrate.reset" => Illuminate\Database\Console\Migrations\ResetCommand {#2243 …25}
+                  "command.migrate.rollback" => Illuminate\Database\Console\Migrations\RollbackCommand {#2237 …25}
+                  "command.migrate.status" => Illuminate\Database\Console\Migrations\StatusCommand {#2231 …25}
+                  "migration.creator" => Illuminate\Database\Migrations\MigrationCreator {#2227 …3}
+                  "command.migrate.make" => Illuminate\Database\Console\Migrations\MigrateMakeCommand {#2226 …26}
+                  "command.tinker" => Laravel\Tinker\Console\TinkerCommand {#2219 …25}
+                  "db.transactions" => Illuminate\Database\DatabaseTransactionsManager {#2183 …1}
+                  "Faker\Generator" => Faker\Generator {#3592 …3}
+                  "auth" => Illuminate\Auth\AuthManager {#4385 …5}
+                  "hash" => Illuminate\Hashing\HashManager {#2203 …4}
+                  "session" => Illuminate\Session\SessionManager {#2162 …4}
+                  "session.store" => Illuminate\Session\Store {#4658 …5}
+                  "cookie" => Illuminate\Cookie\CookieJar {#4637 …5}
+                  "view" => Illuminate\View\Factory {#5487}
+                  "translation.loader" => Illuminate\Translation\FileLoader {#1873 …4}
+                  "translator" => Illuminate\Translation\Translator {#1875 …6}
+                  "routes" => Illuminate\Routing\RouteCollection {#382 …4}
+                  "url" => Illuminate\Routing\UrlGenerator {#3660 …13}
+                  "Illuminate\Foundation\Mix" => Illuminate\Foundation\Mix {#5544}
+                  "Livewire\LivewireComponentsFinder" => Livewire\LivewireComponentsFinder {#5683 …4}
+                  "redirect" => Illuminate\Routing\Redirector {#2794 …2}
+                  "encrypter" => Illuminate\Encryption\Encrypter {#6301 …2}
+                ]
+                #scopedInstances: []
+                #aliases: array:82 [
+                  "Illuminate\Foundation\Application" => "app"
+                  "Illuminate\Contracts\Container\Container" => "app"
+                  "Illuminate\Contracts\Foundation\Application" => "app"
+                  "Psr\Container\ContainerInterface" => "app"
+                  "Illuminate\Auth\AuthManager" => "auth"
+                  "Illuminate\Contracts\Auth\Factory" => "auth"
+                  "Illuminate\Contracts\Auth\Guard" => "auth.driver"
+                  "Illuminate\View\Compilers\BladeCompiler" => "blade.compiler"
+                  "Illuminate\Cache\CacheManager" => "cache"
+                  "Illuminate\Contracts\Cache\Factory" => "cache"
+                  "Illuminate\Cache\Repository" => "cache.store"
+                  "Illuminate\Contracts\Cache\Repository" => "cache.store"
+                  "Psr\SimpleCache\CacheInterface" => "cache.store"
+                  "Symfony\Component\Cache\Adapter\Psr16Adapter" => "cache.psr6"
+                  "Symfony\Component\Cache\Adapter\AdapterInterface" => "cache.psr6"
+                  "Psr\Cache\CacheItemPoolInterface" => "cache.psr6"
+                  "Illuminate\Config\Repository" => "config"
+                  "Illuminate\Contracts\Config\Repository" => "config"
+                  "Illuminate\Cookie\CookieJar" => "cookie"
+                  "Illuminate\Contracts\Cookie\Factory" => "cookie"
+                  "Illuminate\Contracts\Cookie\QueueingFactory" => "cookie"
+                  "Illuminate\Database\DatabaseManager" => "db"
+                  "Illuminate\Database\ConnectionResolverInterface" => "db"
+                  "Illuminate\Database\Connection" => "db.connection"
+                  "Illuminate\Database\ConnectionInterface" => "db.connection"
+                  "Illuminate\Encryption\Encrypter" => "encrypter"
+                  "Illuminate\Contracts\Encryption\Encrypter" => "encrypter"
+                  "Illuminate\Contracts\Encryption\StringEncrypter" => "encrypter"
+                  "Illuminate\Events\Dispatcher" => "events"
+                  "Illuminate\Contracts\Events\Dispatcher" => "events"
+                  "Illuminate\Filesystem\Filesystem" => "files"
+                  "Illuminate\Filesystem\FilesystemManager" => "filesystem"
+                  "Illuminate\Contracts\Filesystem\Factory" => "filesystem"
+                  "Illuminate\Contracts\Filesystem\Filesystem" => "filesystem.disk"
+                  "Illuminate\Contracts\Filesystem\Cloud" => "filesystem.cloud"
+                  "Illuminate\Hashing\HashManager" => "hash"
+                  "Illuminate\Contracts\Hashing\Hasher" => "hash.driver"
+                  "Illuminate\Translation\Translator" => "translator"
+                  "Illuminate\Contracts\Translation\Translator" => "translator"
+                  "Illuminate\Log\LogManager" => "log"
+                  "Psr\Log\LoggerInterface" => "log"
+                  "Illuminate\Mail\MailManager" => "mail.manager"
+                  "Illuminate\Contracts\Mail\Factory" => "mail.manager"
+                  "Illuminate\Mail\Mailer" => "mailer"
+                  "Illuminate\Contracts\Mail\Mailer" => "mailer"
+                  "Illuminate\Contracts\Mail\MailQueue" => "mailer"
+                  "Illuminate\Auth\Passwords\PasswordBrokerManager" => "auth.password"
+                  "Illuminate\Contracts\Auth\PasswordBrokerFactory" => "auth.password"
+                  "Illuminate\Auth\Passwords\PasswordBroker" => "auth.password.broker"
+                  "Illuminate\Contracts\Auth\PasswordBroker" => "auth.password.broker"
+                  "Illuminate\Queue\QueueManager" => "queue"
+                  "Illuminate\Contracts\Queue\Factory" => "queue"
+                  "Illuminate\Contracts\Queue\Monitor" => "queue"
+                  "Illuminate\Contracts\Queue\Queue" => "queue.connection"
+                  "Illuminate\Queue\Failed\FailedJobProviderInterface" => "queue.failer"
+                  "Illuminate\Routing\Redirector" => "redirect"
+                  "Illuminate\Redis\RedisManager" => "redis"
+                  "Illuminate\Contracts\Redis\Factory" => "redis"
+                  "Illuminate\Redis\Connections\Connection" => "redis.connection"
+                  "Illuminate\Contracts\Redis\Connection" => "redis.connection"
+                  "Illuminate\Http\Request" => "request"
+                  "Symfony\Component\HttpFoundation\Request" => "request"
+                  "Illuminate\Routing\Router" => "router"
+                  "Illuminate\Contracts\Routing\Registrar" => "router"
+                  "Illuminate\Contracts\Routing\BindingRegistrar" => "router"
+                  "Illuminate\Session\SessionManager" => "session"
+                  "Illuminate\Session\Store" => "session.store"
+                  "Illuminate\Contracts\Session\Session" => "session.store"
+                  "Illuminate\Routing\UrlGenerator" => "url"
+                  "Illuminate\Contracts\Routing\UrlGenerator" => "url"
+                  "Illuminate\Validation\Factory" => "validator"
+                  "Illuminate\Contracts\Validation\Factory" => "validator"
+                  "Illuminate\View\Factory" => "view"
+                  "Illuminate\Contracts\View\Factory" => "view"
+                  "Illuminate\Contracts\Notifications\Dispatcher" => "Illuminate\Notifications\ChannelManager"
+                  "Illuminate\Contracts\Notifications\Factory" => "Illuminate\Notifications\ChannelManager"
+                  "Facade\FlareClient\Http\Client" => "flare.http"
+                  "Jenssegers\Agent\Agent" => "agent"
+                  "livewire" => "Livewire\LivewireManager"
+                  "Illuminate\Contracts\Broadcasting\Factory" => "Illuminate\Broadcasting\BroadcastManager"
+                  "Illuminate\Contracts\Bus\Dispatcher" => "Illuminate\Bus\Dispatcher"
+                  "Illuminate\Contracts\Bus\QueueingDispatcher" => "Illuminate\Bus\Dispatcher"
+                ]
+                #abstractAliases: array:44 [
+                  "app" => array:4 [ …4]
+                  "auth" => array:2 [ …2]
+                  "auth.driver" => array:1 [ …1]
+                  "blade.compiler" => array:1 [ …1]
+                  "cache" => array:2 [ …2]
+                  "cache.store" => array:3 [ …3]
+                  "cache.psr6" => array:3 [ …3]
+                  "config" => array:2 [ …2]
+                  "cookie" => array:3 [ …3]
+                  "db" => array:2 [ …2]
+                  "db.connection" => array:2 [ …2]
+                  "encrypter" => array:3 [ …3]
+                  "events" => array:2 [ …2]
+                  "files" => array:1 [ …1]
+                  "filesystem" => array:2 [ …2]
+                  "filesystem.disk" => array:1 [ …1]
+                  "filesystem.cloud" => array:1 [ …1]
+                  "hash" => array:1 [ …1]
+                  "hash.driver" => array:1 [ …1]
+                  "translator" => array:2 [ …2]
+                  "log" => array:2 [ …2]
+                  "mail.manager" => array:2 [ …2]
+                  "mailer" => array:3 [ …3]
+                  "auth.password" => array:2 [ …2]
+                  "auth.password.broker" => array:2 [ …2]
+                  "queue" => array:3 [ …3]
+                  "queue.connection" => array:1 [ …1]
+                  "queue.failer" => array:1 [ …1]
+                  "redirect" => array:1 [ …1]
+                  "redis" => array:2 [ …2]
+                  "redis.connection" => array:2 [ …2]
+                  "request" => array:2 [ …2]
+                  "router" => array:3 [ …3]
+                  "session" => array:1 [ …1]
+                  "session.store" => array:2 [ …2]
+                  "url" => array:2 [ …2]
+                  "validator" => array:2 [ …2]
+                  "view" => array:2 [ …2]
+                  "Illuminate\Notifications\ChannelManager" => array:2 [ …2]
+                  "flare.http" => array:1 [ …1]
+                  "agent" => array:1 [ …1]
+                  "Livewire\LivewireManager" => array:1 [ …1]
+                  "Illuminate\Broadcasting\BroadcastManager" => array:1 [ …1]
+                  "Illuminate\Bus\Dispatcher" => array:2 [ …2]
+                ]
+                #extenders: array:1 [
+                  "url" => array:1 [ …1]
+                ]
+                #tags: []
+                #buildStack: []
+                #with: []
+                +contextual: []
+                #reboundCallbacks: array:3 [
+                  "request" => array:3 [ …3]
+                  "events" => array:1 [ …1]
+                  "routes" => array:1 [ …1]
+                ]
+                #globalBeforeResolvingCallbacks: []
+                #globalResolvingCallbacks: []
+                #globalAfterResolvingCallbacks: []
+                #beforeResolvingCallbacks: []
+                #resolvingCallbacks: array:1 [
+                  "Illuminate\Foundation\Http\FormRequest" => array:1 [ …1]
+                ]
+                #afterResolvingCallbacks: array:5 [
+                  "blade.compiler" => array:2 [ …2]
+                  "Illuminate\Contracts\Validation\ValidatesWhenResolved" => array:1 [ …1]
+                  "view" => array:4 [ …4]
+                  "migrator" => array:1 [ …1]
+                  "auth" => array:1 [ …1]
+                ]
+              }
+              #bootingCallbacks: []
+              #bootedCallbacks: []
+            }
+            file: "./vendor/laravel/framework/src/Illuminate/View/ViewServiceProvider.php"
+            line: "123 to 125"
+          }
+          "php" => Closure() {#5191
+            class: "Facade\Ignition\IgnitionServiceProvider"
+            this: Facade\Ignition\IgnitionServiceProvider {#5050}
+            file: "./vendor/facade/ignition/src/IgnitionServiceProvider.php"
+            line: "159 to 161"
+          }
+          "blade" => Closure() {#7390
+            class: "Livewire\LivewireServiceProvider"
+            this: Livewire\LivewireServiceProvider {#5207}
+            file: "./vendor/livewire/livewire/src/LivewireServiceProvider.php"
+            line: "306 to 316"
+          }
+        ]
+        #resolved: array:1 [
+          "blade" => Livewire\CompilerEngineForIgnition {#1909
+            #currentPath: "/home/andy/Projects/ecommerce/resources/views/components/common/table.blade.php"
+            #compiler: Illuminate\View\Compilers\BladeCompiler {#2810}
+            #lastCompiled: []
+            #files: Illuminate\Filesystem\Filesystem {#1910}
+            #lastCompiledData: array:181 [
+              0 => array:3 [
+                "path" => "/home/andy/Projects/ecommerce/resources/views/category/index.blade.php"
+                "compiledPath" => "/home/andy/Projects/ecommerce/storage/framework/views/d187b89118feff32cfceab78068150ba77a4d0b7.php"
+                "data" => array:2 [ …2]
+              ]
+              1 => array:3 [
+                "path" => "/home/andy/Projects/ecommerce/resources/views/components/common/input-search.blade.php"
+                "compiledPath" => "/home/andy/Projects/ecommerce/storage/framework/views/da82c704e5ed3677bd96fe8dbae75c5e44b103b0.php"
+                "data" => array:5 [ …5]
+              ]
+              2 => array:3 [
+                "path" => "/home/andy/Projects/ecommerce/resources/views/components/category/table.blade.php"
+                "compiledPath" => "/home/andy/Projects/ecommerce/storage/framework/views/36a87d04ff33016d2e744d2fd96fe478359fedd2.php"
+                "data" => array:5 [ …5]
+              ]
+              3 => array:3 [
+                "path" => "/home/andy/Projects/ecommerce/resources/views/components/common/table/header/cell.blade.php"
+                "compiledPath" => "/home/andy/Projects/ecommerce/storage/framework/views/b3c76d28bc6ce75620d47e07dc9f8d636d5613c4.php"
+                "data" => array:4 [ …4]
+              ]
+              4 => array:3 [
+                "path" => "/home/andy/Projects/ecommerce/resources/views/components/common/table/header/cell.blade.php"
+                "compiledPath" => "/home/andy/Projects/ecommerce/storage/framework/views/b3c76d28bc6ce75620d47e07dc9f8d636d5613c4.php"
+                "data" => array:4 [ …4]
+              ]
+              5 => array:3 [
+                "path" => "/home/andy/Projects/ecommerce/resources/views/components/common/table/header/cell.blade.php"
+                "compiledPath" => "/home/andy/Projects/ecommerce/storage/framework/views/b3c76d28bc6ce75620d47e07dc9f8d636d5613c4.php"
+                "data" => array:4 [ …4]
+              ]
+              6 => array:3 [
+                "path" => "/home/andy/Projects/ecommerce/resources/views/components/common/table/header.blade.php"
+                "compiledPath" => "/home/andy/Projects/ecommerce/storage/framework/views/6f8ae5be4d7a053b169dfd142d7fe5d5b145fee3.php"
+                "data" => array:4 [ …4]
+              ]
+              7 => array:3 [
+                "path" => "/home/andy/Projects/ecommerce/resources/views/components/common/table/body/cell.blade.php"
+                "compiledPath" => "/home/andy/Projects/ecommerce/storage/framework/views/adf8816dbaf4c31866925f8dc174da2004290edb.php"
+                "data" => array:4 [ …4]
+              ]
+              8 => array:3 [
+                "path" => "/home/andy/Projects/ecommerce/resources/views/components/common/table/body/cell.blade.php"
+                "compiledPath" => "/home/andy/Projects/ecommerce/storage/framework/views/adf8816dbaf4c31866925f8dc174da2004290edb.php"
+                "data" => array:4 [ …4]
+              ]
+              9 => array:3 [
+                "path" => "/home/andy/Projects/ecommerce/resources/views/components/common/table/body/cell.blade.php"
+                "compiledPath" => "/home/andy/Projects/ecommerce/storage/framework/views/adf8816dbaf4c31866925f8dc174da2004290edb.php"
+                "data" => array:4 [ …4]
+              ]
+              10 => array:3 [
+                "path" => "/home/andy/Projects/ecommerce/resources/views/components/common/table/body/cell.blade.php"
+                "compiledPath" => "/home/andy/Projects/ecommerce/storage/framework/views/adf8816dbaf4c31866925f8dc174da2004290edb.php"
+                "data" => array:4 [ …4]
+              ]
+              11 => array:3 [
+                "path" => "/home/andy/Projects/ecommerce/resources/views/components/common/table/body/row.blade.php"
+                "compiledPath" => "/home/andy/Projects/ecommerce/storage/framework/views/22c316cffd010d5b251fdff06f8b405ecb289052.php"
+                "data" => array:4 [ …4]
+              ]
+              12 => array:3 [
+                "path" => "/home/andy/Projects/ecommerce/resources/views/components/common/table/body/cell.blade.php"
+                "compiledPath" => "/home/andy/Projects/ecommerce/storage/framework/views/adf8816dbaf4c31866925f8dc174da2004290edb.php"
+                "data" => array:4 [ …4]
+              ]
+              13 => array:3 [
+                "path" => "/home/andy/Projects/ecommerce/resources/views/components/common/table/body/cell.blade.php"
+                "compiledPath" => "/home/andy/Projects/ecommerce/storage/framework/views/adf8816dbaf4c31866925f8dc174da2004290edb.php"
+                "data" => array:4 [ …4]
+              ]
+              14 => array:3 [
+                "path" => "/home/andy/Projects/ecommerce/resources/views/components/common/table/body/cell.blade.php"
+                "compiledPath" => "/home/andy/Projects/ecommerce/storage/framework/views/adf8816dbaf4c31866925f8dc174da2004290edb.php"
+                "data" => array:4 [ …4]
+              ]
+              15 => array:3 [
+                "path" => "/home/andy/Projects/ecommerce/resources/views/components/common/table/body/cell.blade.php"
+                "compiledPath" => "/home/andy/Projects/ecommerce/storage/framework/views/adf8816dbaf4c31866925f8dc174da2004290edb.php"
+                "data" => array:4 [ …4]
+              ]
+              16 => array:3 [
+                "path" => "/home/andy/Projects/ecommerce/resources/views/components/common/table/body/row.blade.php"
+                "compiledPath" => "/home/andy/Projects/ecommerce/storage/framework/views/22c316cffd010d5b251fdff06f8b405ecb289052.php"
+                "data" => array:4 [ …4]
+              ]
+              17 => array:3 [
+                "path" => "/home/andy/Projects/ecommerce/resources/views/components/common/table/body/cell.blade.php"
+                "compiledPath" => "/home/andy/Projects/ecommerce/storage/framework/views/adf8816dbaf4c31866925f8dc174da2004290edb.php"
+                "data" => array:4 [ …4]
+              ]
+              18 => array:3 [
+                "path" => "/home/andy/Projects/ecommerce/resources/views/components/common/table/body/cell.blade.php"
+                "compiledPath" => "/home/andy/Projects/ecommerce/storage/framework/views/adf8816dbaf4c31866925f8dc174da2004290edb.php"
+                "data" => array:4 [ …4]
+              ]
+              19 => array:3 [
+                "path" => "/home/andy/Projects/ecommerce/resources/views/components/common/table/body/cell.blade.php"
+                "compiledPath" => "/home/andy/Projects/ecommerce/storage/framework/views/adf8816dbaf4c31866925f8dc174da2004290edb.php"
+                "data" => array:4 [ …4]
+              ]
+              20 => array:3 [
+                "path" => "/home/andy/Projects/ecommerce/resources/views/components/common/table/body/cell.blade.php"
+                "compiledPath" => "/home/andy/Projects/ecommerce/storage/framework/views/adf8816dbaf4c31866925f8dc174da2004290edb.php"
+                "data" => array:4 [ …4]
+              ]
+              21 => array:3 [
+                "path" => "/home/andy/Projects/ecommerce/resources/views/components/common/table/body/row.blade.php"
+                "compiledPath" => "/home/andy/Projects/ecommerce/storage/framework/views/22c316cffd010d5b251fdff06f8b405ecb289052.php"
+                "data" => array:4 [ …4]
+              ]
+              22 => array:3 [
+                "path" => "/home/andy/Projects/ecommerce/resources/views/components/common/table/body/cell.blade.php"
+                "compiledPath" => "/home/andy/Projects/ecommerce/storage/framework/views/adf8816dbaf4c31866925f8dc174da2004290edb.php"
+                "data" => array:4 [ …4]
+              ]
+              23 => array:3 [
+                "path" => "/home/andy/Projects/ecommerce/resources/views/components/common/table/body/cell.blade.php"
+                "compiledPath" => "/home/andy/Projects/ecommerce/storage/framework/views/adf8816dbaf4c31866925f8dc174da2004290edb.php"
+                "data" => array:4 [ …4]
+              ]
+              24 => array:3 [
+                "path" => "/home/andy/Projects/ecommerce/resources/views/components/common/table/body/cell.blade.php"
+                "compiledPath" => "/home/andy/Projects/ecommerce/storage/framework/views/adf8816dbaf4c31866925f8dc174da2004290edb.php"
+                "data" => array:4 [ …4]
+              ]
+              25 => array:3 [
+                "path" => "/home/andy/Projects/ecommerce/resources/views/components/common/table/body/cell.blade.php"
+                "compiledPath" => "/home/andy/Projects/ecommerce/storage/framework/views/adf8816dbaf4c31866925f8dc174da2004290edb.php"
+                "data" => array:4 [ …4]
+              ]
+              26 => array:3 [
+                "path" => "/home/andy/Projects/ecommerce/resources/views/components/common/table/body/row.blade.php"
+                "compiledPath" => "/home/andy/Projects/ecommerce/storage/framework/views/22c316cffd010d5b251fdff06f8b405ecb289052.php"
+                "data" => array:4 [ …4]
+              ]
+              27 => array:3 [
+                "path" => "/home/andy/Projects/ecommerce/resources/views/components/common/table/body/cell.blade.php"
+                "compiledPath" => "/home/andy/Projects/ecommerce/storage/framework/views/adf8816dbaf4c31866925f8dc174da2004290edb.php"
+                "data" => array:4 [ …4]
+              ]
+              28 => array:3 [
+                "path" => "/home/andy/Projects/ecommerce/resources/views/components/common/table/body/cell.blade.php"
+                "compiledPath" => "/home/andy/Projects/ecommerce/storage/framework/views/adf8816dbaf4c31866925f8dc174da2004290edb.php"
+                "data" => array:4 [ …4]
+              ]
+              29 => array:3 [
+                "path" => "/home/andy/Projects/ecommerce/resources/views/components/common/table/body/cell.blade.php"
+                "compiledPath" => "/home/andy/Projects/ecommerce/storage/framework/views/adf8816dbaf4c31866925f8dc174da2004290edb.php"
+                "data" => array:4 [ …4]
+              ]
+              30 => array:3 [
+                "path" => "/home/andy/Projects/ecommerce/resources/views/components/common/table/body/cell.blade.php"
+                "compiledPath" => "/home/andy/Projects/ecommerce/storage/framework/views/adf8816dbaf4c31866925f8dc174da2004290edb.php"
+                "data" => array:4 [ …4]
+              ]
+              31 => array:3 [
+                "path" => "/home/andy/Projects/ecommerce/resources/views/components/common/table/body/row.blade.php"
+                "compiledPath" => "/home/andy/Projects/ecommerce/storage/framework/views/22c316cffd010d5b251fdff06f8b405ecb289052.php"
+                "data" => array:4 [ …4]
+              ]
+              32 => array:3 [
+                "path" => "/home/andy/Projects/ecommerce/resources/views/components/common/table/body/cell.blade.php"
+                "compiledPath" => "/home/andy/Projects/ecommerce/storage/framework/views/adf8816dbaf4c31866925f8dc174da2004290edb.php"
+                "data" => array:4 [ …4]
+              ]
+              33 => array:3 [
+                "path" => "/home/andy/Projects/ecommerce/resources/views/components/common/table/body/cell.blade.php"
+                "compiledPath" => "/home/andy/Projects/ecommerce/storage/framework/views/adf8816dbaf4c31866925f8dc174da2004290edb.php"
+                "data" => array:4 [ …4]
+              ]
+              34 => array:3 [
+                "path" => "/home/andy/Projects/ecommerce/resources/views/components/common/table/body/cell.blade.php"
+                "compiledPath" => "/home/andy/Projects/ecommerce/storage/framework/views/adf8816dbaf4c31866925f8dc174da2004290edb.php"
+                "data" => array:4 [ …4]
+              ]
+              35 => array:3 [
+                "path" => "/home/andy/Projects/ecommerce/resources/views/components/common/table/body/cell.blade.php"
+                "compiledPath" => "/home/andy/Projects/ecommerce/storage/framework/views/adf8816dbaf4c31866925f8dc174da2004290edb.php"
+                "data" => array:4 [ …4]
+              ]
+              36 => array:3 [
+                "path" => "/home/andy/Projects/ecommerce/resources/views/components/common/table/body/row.blade.php"
+                "compiledPath" => "/home/andy/Projects/ecommerce/storage/framework/views/22c316cffd010d5b251fdff06f8b405ecb289052.php"
+                "data" => array:4 [ …4]
+              ]
+              37 => array:3 [
+                "path" => "/home/andy/Projects/ecommerce/resources/views/components/common/table/body/cell.blade.php"
+                "compiledPath" => "/home/andy/Projects/ecommerce/storage/framework/views/adf8816dbaf4c31866925f8dc174da2004290edb.php"
+                "data" => array:4 [ …4]
+              ]
+              38 => array:3 [
+                "path" => "/home/andy/Projects/ecommerce/resources/views/components/common/table/body/cell.blade.php"
+                "compiledPath" => "/home/andy/Projects/ecommerce/storage/framework/views/adf8816dbaf4c31866925f8dc174da2004290edb.php"
+                "data" => array:4 [ …4]
+              ]
+              39 => array:3 [
+                "path" => "/home/andy/Projects/ecommerce/resources/views/components/common/table/body/cell.blade.php"
+                "compiledPath" => "/home/andy/Projects/ecommerce/storage/framework/views/adf8816dbaf4c31866925f8dc174da2004290edb.php"
+                "data" => array:4 [ …4]
+              ]
+              40 => array:3 [
+                "path" => "/home/andy/Projects/ecommerce/resources/views/components/common/table/body/cell.blade.php"
+                "compiledPath" => "/home/andy/Projects/ecommerce/storage/framework/views/adf8816dbaf4c31866925f8dc174da2004290edb.php"
+                "data" => array:4 [ …4]
+              ]
+              41 => array:3 [
+                "path" => "/home/andy/Projects/ecommerce/resources/views/components/common/table/body/row.blade.php"
+                "compiledPath" => "/home/andy/Projects/ecommerce/storage/framework/views/22c316cffd010d5b251fdff06f8b405ecb289052.php"
+                "data" => array:4 [ …4]
+              ]
+              42 => array:3 [
+                "path" => "/home/andy/Projects/ecommerce/resources/views/components/common/table/body/cell.blade.php"
+                "compiledPath" => "/home/andy/Projects/ecommerce/storage/framework/views/adf8816dbaf4c31866925f8dc174da2004290edb.php"
+                "data" => array:4 [ …4]
+              ]
+              43 => array:3 [
+                "path" => "/home/andy/Projects/ecommerce/resources/views/components/common/table/body/cell.blade.php"
+                "compiledPath" => "/home/andy/Projects/ecommerce/storage/framework/views/adf8816dbaf4c31866925f8dc174da2004290edb.php"
+                "data" => array:4 [ …4]
+              ]
+              44 => array:3 [
+                "path" => "/home/andy/Projects/ecommerce/resources/views/components/common/table/body/cell.blade.php"
+                "compiledPath" => "/home/andy/Projects/ecommerce/storage/framework/views/adf8816dbaf4c31866925f8dc174da2004290edb.php"
+                "data" => array:4 [ …4]
+              ]
+              45 => array:3 [
+                "path" => "/home/andy/Projects/ecommerce/resources/views/components/common/table/body/cell.blade.php"
+                "compiledPath" => "/home/andy/Projects/ecommerce/storage/framework/views/adf8816dbaf4c31866925f8dc174da2004290edb.php"
+                "data" => array:4 [ …4]
+              ]
+              46 => array:3 [
+                "path" => "/home/andy/Projects/ecommerce/resources/views/components/common/table/body/row.blade.php"
+                "compiledPath" => "/home/andy/Projects/ecommerce/storage/framework/views/22c316cffd010d5b251fdff06f8b405ecb289052.php"
+                "data" => array:4 [ …4]
+              ]
+              47 => array:3 [
+                "path" => "/home/andy/Projects/ecommerce/resources/views/components/common/table/body/cell.blade.php"
+                "compiledPath" => "/home/andy/Projects/ecommerce/storage/framework/views/adf8816dbaf4c31866925f8dc174da2004290edb.php"
+                "data" => array:4 [ …4]
+              ]
+              48 => array:3 [
+                "path" => "/home/andy/Projects/ecommerce/resources/views/components/common/table/body/cell.blade.php"
+                "compiledPath" => "/home/andy/Projects/ecommerce/storage/framework/views/adf8816dbaf4c31866925f8dc174da2004290edb.php"
+                "data" => array:4 [ …4]
+              ]
+              49 => array:3 [
+                "path" => "/home/andy/Projects/ecommerce/resources/views/components/common/table/body/cell.blade.php"
+                "compiledPath" => "/home/andy/Projects/ecommerce/storage/framework/views/adf8816dbaf4c31866925f8dc174da2004290edb.php"
+                "data" => array:4 [ …4]
+              ]
+              50 => array:3 [
+                "path" => "/home/andy/Projects/ecommerce/resources/views/components/common/table/body/cell.blade.php"
+                "compiledPath" => "/home/andy/Projects/ecommerce/storage/framework/views/adf8816dbaf4c31866925f8dc174da2004290edb.php"
+                "data" => array:4 [ …4]
+              ]
+              51 => array:3 [
+                "path" => "/home/andy/Projects/ecommerce/resources/views/components/common/table/body/row.blade.php"
+                "compiledPath" => "/home/andy/Projects/ecommerce/storage/framework/views/22c316cffd010d5b251fdff06f8b405ecb289052.php"
+                "data" => array:4 [ …4]
+              ]
+              52 => array:3 [
+                "path" => "/home/andy/Projects/ecommerce/resources/views/components/common/table/body/cell.blade.php"
+                "compiledPath" => "/home/andy/Projects/ecommerce/storage/framework/views/adf8816dbaf4c31866925f8dc174da2004290edb.php"
+                "data" => array:4 [ …4]
+              ]
+              53 => array:3 [
+                "path" => "/home/andy/Projects/ecommerce/resources/views/components/common/table/body/cell.blade.php"
+                "compiledPath" => "/home/andy/Projects/ecommerce/storage/framework/views/adf8816dbaf4c31866925f8dc174da2004290edb.php"
+                "data" => array:4 [ …4]
+              ]
+              54 => array:3 [
+                "path" => "/home/andy/Projects/ecommerce/resources/views/components/common/table/body/cell.blade.php"
+                "compiledPath" => "/home/andy/Projects/ecommerce/storage/framework/views/adf8816dbaf4c31866925f8dc174da2004290edb.php"
+                "data" => array:4 [ …4]
+              ]
+              55 => array:3 [
+                "path" => "/home/andy/Projects/ecommerce/resources/views/components/common/table/body/cell.blade.php"
+                "compiledPath" => "/home/andy/Projects/ecommerce/storage/framework/views/adf8816dbaf4c31866925f8dc174da2004290edb.php"
+                "data" => array:4 [ …4]
+              ]
+              56 => array:3 [
+                "path" => "/home/andy/Projects/ecommerce/resources/views/components/common/table/body/row.blade.php"
+                "compiledPath" => "/home/andy/Projects/ecommerce/storage/framework/views/22c316cffd010d5b251fdff06f8b405ecb289052.php"
+                "data" => array:4 [ …4]
+              ]
+              57 => array:3 [
+                "path" => "/home/andy/Projects/ecommerce/resources/views/components/common/table/body/cell.blade.php"
+                "compiledPath" => "/home/andy/Projects/ecommerce/storage/framework/views/adf8816dbaf4c31866925f8dc174da2004290edb.php"
+                "data" => array:4 [ …4]
+              ]
+              58 => array:3 [
+                "path" => "/home/andy/Projects/ecommerce/resources/views/components/common/table/body/cell.blade.php"
+                "compiledPath" => "/home/andy/Projects/ecommerce/storage/framework/views/adf8816dbaf4c31866925f8dc174da2004290edb.php"
+                "data" => array:4 [ …4]
+              ]
+              59 => array:3 [
+                "path" => "/home/andy/Projects/ecommerce/resources/views/components/common/table/body/cell.blade.php"
+                "compiledPath" => "/home/andy/Projects/ecommerce/storage/framework/views/adf8816dbaf4c31866925f8dc174da2004290edb.php"
+                "data" => array:4 [ …4]
+              ]
+              60 => array:3 [
+                "path" => "/home/andy/Projects/ecommerce/resources/views/components/common/table/body/cell.blade.php"
+                "compiledPath" => "/home/andy/Projects/ecommerce/storage/framework/views/adf8816dbaf4c31866925f8dc174da2004290edb.php"
+                "data" => array:4 [ …4]
+              ]
+              61 => array:3 [
+                "path" => "/home/andy/Projects/ecommerce/resources/views/components/common/table/body/row.blade.php"
+                "compiledPath" => "/home/andy/Projects/ecommerce/storage/framework/views/22c316cffd010d5b251fdff06f8b405ecb289052.php"
+                "data" => array:4 [ …4]
+              ]
+              62 => array:3 [
+                "path" => "/home/andy/Projects/ecommerce/resources/views/components/common/table/body/cell.blade.php"
+                "compiledPath" => "/home/andy/Projects/ecommerce/storage/framework/views/adf8816dbaf4c31866925f8dc174da2004290edb.php"
+                "data" => array:4 [ …4]
+              ]
+              63 => array:3 [
+                "path" => "/home/andy/Projects/ecommerce/resources/views/components/common/table/body/cell.blade.php"
+                "compiledPath" => "/home/andy/Projects/ecommerce/storage/framework/views/adf8816dbaf4c31866925f8dc174da2004290edb.php"
+                "data" => array:4 [ …4]
+              ]
+              64 => array:3 [
+                "path" => "/home/andy/Projects/ecommerce/resources/views/components/common/table/body/cell.blade.php"
+                "compiledPath" => "/home/andy/Projects/ecommerce/storage/framework/views/adf8816dbaf4c31866925f8dc174da2004290edb.php"
+                "data" => array:4 [ …4]
+              ]
+              65 => array:3 [
+                "path" => "/home/andy/Projects/ecommerce/resources/views/components/common/table/body/cell.blade.php"
+                "compiledPath" => "/home/andy/Projects/ecommerce/storage/framework/views/adf8816dbaf4c31866925f8dc174da2004290edb.php"
+                "data" => array:4 [ …4]
+              ]
+              66 => array:3 [
+                "path" => "/home/andy/Projects/ecommerce/resources/views/components/common/table/body/row.blade.php"
+                "compiledPath" => "/home/andy/Projects/ecommerce/storage/framework/views/22c316cffd010d5b251fdff06f8b405ecb289052.php"
+                "data" => array:4 [ …4]
+              ]
+              67 => array:3 [
+                "path" => "/home/andy/Projects/ecommerce/resources/views/components/common/table/body/cell.blade.php"
+                "compiledPath" => "/home/andy/Projects/ecommerce/storage/framework/views/adf8816dbaf4c31866925f8dc174da2004290edb.php"
+                "data" => array:4 [ …4]
+              ]
+              68 => array:3 [
+                "path" => "/home/andy/Projects/ecommerce/resources/views/components/common/table/body/cell.blade.php"
+                "compiledPath" => "/home/andy/Projects/ecommerce/storage/framework/views/adf8816dbaf4c31866925f8dc174da2004290edb.php"
+                "data" => array:4 [ …4]
+              ]
+              69 => array:3 [
+                "path" => "/home/andy/Projects/ecommerce/resources/views/components/common/table/body/cell.blade.php"
+                "compiledPath" => "/home/andy/Projects/ecommerce/storage/framework/views/adf8816dbaf4c31866925f8dc174da2004290edb.php"
+                "data" => array:4 [ …4]
+              ]
+              70 => array:3 [
+                "path" => "/home/andy/Projects/ecommerce/resources/views/components/common/table/body/cell.blade.php"
+                "compiledPath" => "/home/andy/Projects/ecommerce/storage/framework/views/adf8816dbaf4c31866925f8dc174da2004290edb.php"
+                "data" => array:4 [ …4]
+              ]
+              71 => array:3 [
+                "path" => "/home/andy/Projects/ecommerce/resources/views/components/common/table/body/row.blade.php"
+                "compiledPath" => "/home/andy/Projects/ecommerce/storage/framework/views/22c316cffd010d5b251fdff06f8b405ecb289052.php"
+                "data" => array:4 [ …4]
+              ]
+              72 => array:3 [
+                "path" => "/home/andy/Projects/ecommerce/resources/views/components/common/table/body/cell.blade.php"
+                "compiledPath" => "/home/andy/Projects/ecommerce/storage/framework/views/adf8816dbaf4c31866925f8dc174da2004290edb.php"
+                "data" => array:4 [ …4]
+              ]
+              73 => array:3 [
+                "path" => "/home/andy/Projects/ecommerce/resources/views/components/common/table/body/cell.blade.php"
+                "compiledPath" => "/home/andy/Projects/ecommerce/storage/framework/views/adf8816dbaf4c31866925f8dc174da2004290edb.php"
+                "data" => array:4 [ …4]
+              ]
+              74 => array:3 [
+                "path" => "/home/andy/Projects/ecommerce/resources/views/components/common/table/body/cell.blade.php"
+                "compiledPath" => "/home/andy/Projects/ecommerce/storage/framework/views/adf8816dbaf4c31866925f8dc174da2004290edb.php"
+                "data" => array:4 [ …4]
+              ]
+              75 => array:3 [
+                "path" => "/home/andy/Projects/ecommerce/resources/views/components/common/table/body/cell.blade.php"
+                "compiledPath" => "/home/andy/Projects/ecommerce/storage/framework/views/adf8816dbaf4c31866925f8dc174da2004290edb.php"
+                "data" => array:4 [ …4]
+              ]
+              76 => array:3 [
+                "path" => "/home/andy/Projects/ecommerce/resources/views/components/common/table/body/row.blade.php"
+                "compiledPath" => "/home/andy/Projects/ecommerce/storage/framework/views/22c316cffd010d5b251fdff06f8b405ecb289052.php"
+                "data" => array:4 [ …4]
+              ]
+              77 => array:3 [
+                "path" => "/home/andy/Projects/ecommerce/resources/views/components/common/table/body/cell.blade.php"
+                "compiledPath" => "/home/andy/Projects/ecommerce/storage/framework/views/adf8816dbaf4c31866925f8dc174da2004290edb.php"
+                "data" => array:4 [ …4]
+              ]
+              78 => array:3 [
+                "path" => "/home/andy/Projects/ecommerce/resources/views/components/common/table/body/cell.blade.php"
+                "compiledPath" => "/home/andy/Projects/ecommerce/storage/framework/views/adf8816dbaf4c31866925f8dc174da2004290edb.php"
+                "data" => array:4 [ …4]
+              ]
+              79 => array:3 [
+                "path" => "/home/andy/Projects/ecommerce/resources/views/components/common/table/body/cell.blade.php"
+                "compiledPath" => "/home/andy/Projects/ecommerce/storage/framework/views/adf8816dbaf4c31866925f8dc174da2004290edb.php"
+                "data" => array:4 [ …4]
+              ]
+              80 => array:3 [
+                "path" => "/home/andy/Projects/ecommerce/resources/views/components/common/table/body/cell.blade.php"
+                "compiledPath" => "/home/andy/Projects/ecommerce/storage/framework/views/adf8816dbaf4c31866925f8dc174da2004290edb.php"
+                "data" => array:4 [ …4]
+              ]
+              81 => array:3 [
+                "path" => "/home/andy/Projects/ecommerce/resources/views/components/common/table/body/row.blade.php"
+                "compiledPath" => "/home/andy/Projects/ecommerce/storage/framework/views/22c316cffd010d5b251fdff06f8b405ecb289052.php"
+                "data" => array:4 [ …4]
+              ]
+              82 => array:3 [
+                "path" => "/home/andy/Projects/ecommerce/resources/views/components/common/table/body.blade.php"
+                "compiledPath" => "/home/andy/Projects/ecommerce/storage/framework/views/54105ec776371ad89d49c1fbf7a70e2ce50987f8.php"
+                "data" => array:4 [ …4]
+              ]
+              83 => array:3 [
+                "path" => "/home/andy/Projects/ecommerce/resources/views/components/common/table.blade.php"
+                "compiledPath" => "/home/andy/Projects/ecommerce/storage/framework/views/e10d0f354181f07103bf152d5b44948383041706.php"
+                "data" => array:4 [ …4]
+              ]
+              84 => array:3 [
+                "path" => "/home/andy/Projects/ecommerce/resources/views/components/admin-layout.blade.php"
+                "compiledPath" => "/home/andy/Projects/ecommerce/storage/framework/views/79f18ccdb1b08f1d889490e757211a7c11988025.php"
+                "data" => array:6 [ …6]
+              ]
+              85 => array:3 [
+                "path" => "/home/andy/Projects/ecommerce/resources/views/layouts/app.blade.php"
+                "compiledPath" => "/home/andy/Projects/ecommerce/storage/framework/views/ce755bf677da6a0c8b1f391732d956b9ee5da9db.php"
+                "data" => array:5 [ …5]
+              ]
+              86 => array:3 [
+                "path" => "/home/andy/Projects/ecommerce/resources/views/vendor/jetstream/components/banner.blade.php"
+                "compiledPath" => "/home/andy/Projects/ecommerce/storage/framework/views/7cf091822bddcf78bb47b755bd450b020be7ab6f.php"
+                "data" => array:3 [ …3]
+              ]
+              87 => array:3 [
+                "path" => "/home/andy/Projects/ecommerce/resources/views/navigation-menu.blade.php"
+                "compiledPath" => "/home/andy/Projects/ecommerce/storage/framework/views/42e96ac67cc6f4362cdbd07975b39a31b9a8a287.php"
+                "data" => array:2 [ …2]
+              ]
+              88 => array:3 [
+                "path" => "/home/andy/Projects/ecommerce/resources/views/vendor/jetstream/components/application-mark.blade.php"
+                "compiledPath" => "/home/andy/Projects/ecommerce/storage/framework/views/674b772198f5e1b6bb70c18c6a1db54324c31f9a.php"
+                "data" => array:6 [ …6]
+              ]
+              89 => array:3 [
+                "path" => "/home/andy/Projects/ecommerce/resources/views/vendor/jetstream/components/nav-link.blade.php"
+                "compiledPath" => "/home/andy/Projects/ecommerce/storage/framework/views/e471fd9aa0cbbfc2aabcb619b2d163225f2de1d5.php"
+                "data" => array:7 [ …7]
+              ]
+              90 => array:3 [
+                "path" => "/home/andy/Projects/ecommerce/resources/views/vendor/jetstream/components/nav-link.blade.php"
+                "compiledPath" => "/home/andy/Projects/ecommerce/storage/framework/views/e471fd9aa0cbbfc2aabcb619b2d163225f2de1d5.php"
+                "data" => array:7 [ …7]
+              ]
+              91 => array:3 [
+                "path" => "/home/andy/Projects/ecommerce/resources/views/vendor/jetstream/components/nav-link.blade.php"
+                "compiledPath" => "/home/andy/Projects/ecommerce/storage/framework/views/e471fd9aa0cbbfc2aabcb619b2d163225f2de1d5.php"
+                "data" => array:7 [ …7]
+              ]
+              92 => array:3 [
+                "path" => "/home/andy/Projects/ecommerce/resources/views/vendor/jetstream/components/dropdown-link.blade.php"
+                "compiledPath" => "/home/andy/Projects/ecommerce/storage/framework/views/386dba6e6b89ec371f05dfc07d86ab9368d90156.php"
+                "data" => array:6 [ …6]
+              ]
+              93 => array:3 [
+                "path" => "/home/andy/Projects/ecommerce/resources/views/vendor/jetstream/components/dropdown-link.blade.php"
+                "compiledPath" => "/home/andy/Projects/ecommerce/storage/framework/views/386dba6e6b89ec371f05dfc07d86ab9368d90156.php"
+                "data" => array:7 [ …7]
+              ]
+              94 => array:3 [
+                "path" => "/home/andy/Projects/ecommerce/resources/views/vendor/jetstream/components/dropdown.blade.php"
+                "compiledPath" => "/home/andy/Projects/ecommerce/storage/framework/views/9a12a5a4b788dd174571592d831520e6d3801b5f.php"
+                "data" => array:9 [ …9]
+              ]
+              95 => array:3 [
+                "path" => "/home/andy/Projects/ecommerce/resources/views/vendor/jetstream/components/responsive-nav-link.blade.php"
+                "compiledPath" => "/home/andy/Projects/ecommerce/storage/framework/views/7b49bce08ae4111d841f9427b2f894e9387ae949.php"
+                "data" => array:7 [ …7]
+              ]
+              96 => array:3 [
+                "path" => "/home/andy/Projects/ecommerce/resources/views/vendor/jetstream/components/responsive-nav-link.blade.php"
+                "compiledPath" => "/home/andy/Projects/ecommerce/storage/framework/views/7b49bce08ae4111d841f9427b2f894e9387ae949.php"
+                "data" => array:7 [ …7]
+              ]
+              97 => array:3 [
+                "path" => "/home/andy/Projects/ecommerce/resources/views/vendor/jetstream/components/responsive-nav-link.blade.php"
+                "compiledPath" => "/home/andy/Projects/ecommerce/storage/framework/views/7b49bce08ae4111d841f9427b2f894e9387ae949.php"
+                "data" => array:7 [ …7]
+              ]
+              98 => array:3 [
+                "path" => "/tmp/laravel-bladezqGjaY.blade.php"
+                "compiledPath" => "/home/andy/Projects/ecommerce/storage/framework/views/45cd21cfcd0015c2884bb7afc450cb9a356de6e6.php"
+                "data" => array:3 [ …3]
+              ]
+              99 => array:3 [
+                "path" => "/home/andy/Projects/ecommerce/resources/views/components/category/table.blade.php"
+                "compiledPath" => "/home/andy/Projects/ecommerce/storage/framework/views/36a87d04ff33016d2e744d2fd96fe478359fedd2.php"
+                "data" => array:7 [ …7]
+              ]
+              100 => array:3 [
+                "path" => "/home/andy/Projects/ecommerce/resources/views/components/common/table/header/cell.blade.php"
+                "compiledPath" => "/home/andy/Projects/ecommerce/storage/framework/views/b3c76d28bc6ce75620d47e07dc9f8d636d5613c4.php"
+                "data" => array:6 [ …6]
+              ]
+              101 => array:3 [
+                "path" => "/home/andy/Projects/ecommerce/resources/views/components/common/table/header/cell.blade.php"
+                "compiledPath" => "/home/andy/Projects/ecommerce/storage/framework/views/b3c76d28bc6ce75620d47e07dc9f8d636d5613c4.php"
+                "data" => array:6 [ …6]
+              ]
+              102 => array:3 [
+                "path" => "/home/andy/Projects/ecommerce/resources/views/components/common/table/header/cell.blade.php"
+                "compiledPath" => "/home/andy/Projects/ecommerce/storage/framework/views/b3c76d28bc6ce75620d47e07dc9f8d636d5613c4.php"
+                "data" => array:6 [ …6]
+              ]
+              103 => array:3 [
+                "path" => "/home/andy/Projects/ecommerce/resources/views/components/common/table/header.blade.php"
+                "compiledPath" => "/home/andy/Projects/ecommerce/storage/framework/views/6f8ae5be4d7a053b169dfd142d7fe5d5b145fee3.php"
+                "data" => array:6 [ …6]
+              ]
+              104 => array:3 [
+                "path" => "/home/andy/Projects/ecommerce/resources/views/components/common/table/body/cell.blade.php"
+                "compiledPath" => "/home/andy/Projects/ecommerce/storage/framework/views/adf8816dbaf4c31866925f8dc174da2004290edb.php"
+                "data" => array:6 [ …6]
+              ]
+              105 => array:3 [
+                "path" => "/home/andy/Projects/ecommerce/resources/views/components/common/table/body/cell.blade.php"
+                "compiledPath" => "/home/andy/Projects/ecommerce/storage/framework/views/adf8816dbaf4c31866925f8dc174da2004290edb.php"
+                "data" => array:6 [ …6]
+              ]
+              106 => array:3 [
+                "path" => "/home/andy/Projects/ecommerce/resources/views/components/common/table/body/cell.blade.php"
+                "compiledPath" => "/home/andy/Projects/ecommerce/storage/framework/views/adf8816dbaf4c31866925f8dc174da2004290edb.php"
+                "data" => array:6 [ …6]
+              ]
+              107 => array:3 [
+                "path" => "/home/andy/Projects/ecommerce/resources/views/components/common/table/body/cell.blade.php"
+                "compiledPath" => "/home/andy/Projects/ecommerce/storage/framework/views/adf8816dbaf4c31866925f8dc174da2004290edb.php"
+                "data" => array:6 [ …6]
+              ]
+              108 => array:3 [
+                "path" => "/home/andy/Projects/ecommerce/resources/views/components/common/table/body/row.blade.php"
+                "compiledPath" => "/home/andy/Projects/ecommerce/storage/framework/views/22c316cffd010d5b251fdff06f8b405ecb289052.php"
+                "data" => array:6 [ …6]
+              ]
+              109 => array:3 [
+                "path" => "/home/andy/Projects/ecommerce/resources/views/components/common/table/body/cell.blade.php"
+                "compiledPath" => "/home/andy/Projects/ecommerce/storage/framework/views/adf8816dbaf4c31866925f8dc174da2004290edb.php"
+                "data" => array:6 [ …6]
+              ]
+              110 => array:3 [
+                "path" => "/home/andy/Projects/ecommerce/resources/views/components/common/table/body/cell.blade.php"
+                "compiledPath" => "/home/andy/Projects/ecommerce/storage/framework/views/adf8816dbaf4c31866925f8dc174da2004290edb.php"
+                "data" => array:6 [ …6]
+              ]
+              111 => array:3 [
+                "path" => "/home/andy/Projects/ecommerce/resources/views/components/common/table/body/cell.blade.php"
+                "compiledPath" => "/home/andy/Projects/ecommerce/storage/framework/views/adf8816dbaf4c31866925f8dc174da2004290edb.php"
+                "data" => array:6 [ …6]
+              ]
+              112 => array:3 [
+                "path" => "/home/andy/Projects/ecommerce/resources/views/components/common/table/body/cell.blade.php"
+                "compiledPath" => "/home/andy/Projects/ecommerce/storage/framework/views/adf8816dbaf4c31866925f8dc174da2004290edb.php"
+                "data" => array:6 [ …6]
+              ]
+              113 => array:3 [
+                "path" => "/home/andy/Projects/ecommerce/resources/views/components/common/table/body/row.blade.php"
+                "compiledPath" => "/home/andy/Projects/ecommerce/storage/framework/views/22c316cffd010d5b251fdff06f8b405ecb289052.php"
+                "data" => array:6 [ …6]
+              ]
+              114 => array:3 [
+                "path" => "/home/andy/Projects/ecommerce/resources/views/components/common/table/body/cell.blade.php"
+                "compiledPath" => "/home/andy/Projects/ecommerce/storage/framework/views/adf8816dbaf4c31866925f8dc174da2004290edb.php"
+                "data" => array:6 [ …6]
+              ]
+              115 => array:3 [
+                "path" => "/home/andy/Projects/ecommerce/resources/views/components/common/table/body/cell.blade.php"
+                "compiledPath" => "/home/andy/Projects/ecommerce/storage/framework/views/adf8816dbaf4c31866925f8dc174da2004290edb.php"
+                "data" => array:6 [ …6]
+              ]
+              116 => array:3 [
+                "path" => "/home/andy/Projects/ecommerce/resources/views/components/common/table/body/cell.blade.php"
+                "compiledPath" => "/home/andy/Projects/ecommerce/storage/framework/views/adf8816dbaf4c31866925f8dc174da2004290edb.php"
+                "data" => array:6 [ …6]
+              ]
+              117 => array:3 [
+                "path" => "/home/andy/Projects/ecommerce/resources/views/components/common/table/body/cell.blade.php"
+                "compiledPath" => "/home/andy/Projects/ecommerce/storage/framework/views/adf8816dbaf4c31866925f8dc174da2004290edb.php"
+                "data" => array:6 [ …6]
+              ]
+              118 => array:3 [
+                "path" => "/home/andy/Projects/ecommerce/resources/views/components/common/table/body/row.blade.php"
+                "compiledPath" => "/home/andy/Projects/ecommerce/storage/framework/views/22c316cffd010d5b251fdff06f8b405ecb289052.php"
+                "data" => array:6 [ …6]
+              ]
+              119 => array:3 [
+                "path" => "/home/andy/Projects/ecommerce/resources/views/components/common/table/body/cell.blade.php"
+                "compiledPath" => "/home/andy/Projects/ecommerce/storage/framework/views/adf8816dbaf4c31866925f8dc174da2004290edb.php"
+                "data" => array:6 [ …6]
+              ]
+              120 => array:3 [
+                "path" => "/home/andy/Projects/ecommerce/resources/views/components/common/table/body/cell.blade.php"
+                "compiledPath" => "/home/andy/Projects/ecommerce/storage/framework/views/adf8816dbaf4c31866925f8dc174da2004290edb.php"
+                "data" => array:6 [ …6]
+              ]
+              121 => array:3 [
+                "path" => "/home/andy/Projects/ecommerce/resources/views/components/common/table/body/cell.blade.php"
+                "compiledPath" => "/home/andy/Projects/ecommerce/storage/framework/views/adf8816dbaf4c31866925f8dc174da2004290edb.php"
+                "data" => array:6 [ …6]
+              ]
+              122 => array:3 [
+                "path" => "/home/andy/Projects/ecommerce/resources/views/components/common/table/body/cell.blade.php"
+                "compiledPath" => "/home/andy/Projects/ecommerce/storage/framework/views/adf8816dbaf4c31866925f8dc174da2004290edb.php"
+                "data" => array:6 [ …6]
+              ]
+              123 => array:3 [
+                "path" => "/home/andy/Projects/ecommerce/resources/views/components/common/table/body/row.blade.php"
+                "compiledPath" => "/home/andy/Projects/ecommerce/storage/framework/views/22c316cffd010d5b251fdff06f8b405ecb289052.php"
+                "data" => array:6 [ …6]
+              ]
+              124 => array:3 [
+                "path" => "/home/andy/Projects/ecommerce/resources/views/components/common/table/body/cell.blade.php"
+                "compiledPath" => "/home/andy/Projects/ecommerce/storage/framework/views/adf8816dbaf4c31866925f8dc174da2004290edb.php"
+                "data" => array:6 [ …6]
+              ]
+              125 => array:3 [
+                "path" => "/home/andy/Projects/ecommerce/resources/views/components/common/table/body/cell.blade.php"
+                "compiledPath" => "/home/andy/Projects/ecommerce/storage/framework/views/adf8816dbaf4c31866925f8dc174da2004290edb.php"
+                "data" => array:6 [ …6]
+              ]
+              126 => array:3 [
+                "path" => "/home/andy/Projects/ecommerce/resources/views/components/common/table/body/cell.blade.php"
+                "compiledPath" => "/home/andy/Projects/ecommerce/storage/framework/views/adf8816dbaf4c31866925f8dc174da2004290edb.php"
+                "data" => array:6 [ …6]
+              ]
+              127 => array:3 [
+                "path" => "/home/andy/Projects/ecommerce/resources/views/components/common/table/body/cell.blade.php"
+                "compiledPath" => "/home/andy/Projects/ecommerce/storage/framework/views/adf8816dbaf4c31866925f8dc174da2004290edb.php"
+                "data" => array:6 [ …6]
+              ]
+              128 => array:3 [
+                "path" => "/home/andy/Projects/ecommerce/resources/views/components/common/table/body/row.blade.php"
+                "compiledPath" => "/home/andy/Projects/ecommerce/storage/framework/views/22c316cffd010d5b251fdff06f8b405ecb289052.php"
+                "data" => array:6 [ …6]
+              ]
+              129 => array:3 [
+                "path" => "/home/andy/Projects/ecommerce/resources/views/components/common/table/body/cell.blade.php"
+                "compiledPath" => "/home/andy/Projects/ecommerce/storage/framework/views/adf8816dbaf4c31866925f8dc174da2004290edb.php"
+                "data" => array:6 [ …6]
+              ]
+              130 => array:3 [
+                "path" => "/home/andy/Projects/ecommerce/resources/views/components/common/table/body/cell.blade.php"
+                "compiledPath" => "/home/andy/Projects/ecommerce/storage/framework/views/adf8816dbaf4c31866925f8dc174da2004290edb.php"
+                "data" => array:6 [ …6]
+              ]
+              131 => array:3 [
+                "path" => "/home/andy/Projects/ecommerce/resources/views/components/common/table/body/cell.blade.php"
+                "compiledPath" => "/home/andy/Projects/ecommerce/storage/framework/views/adf8816dbaf4c31866925f8dc174da2004290edb.php"
+                "data" => array:6 [ …6]
+              ]
+              132 => array:3 [
+                "path" => "/home/andy/Projects/ecommerce/resources/views/components/common/table/body/cell.blade.php"
+                "compiledPath" => "/home/andy/Projects/ecommerce/storage/framework/views/adf8816dbaf4c31866925f8dc174da2004290edb.php"
+                "data" => array:6 [ …6]
+              ]
+              133 => array:3 [
+                "path" => "/home/andy/Projects/ecommerce/resources/views/components/common/table/body/row.blade.php"
+                "compiledPath" => "/home/andy/Projects/ecommerce/storage/framework/views/22c316cffd010d5b251fdff06f8b405ecb289052.php"
+                "data" => array:6 [ …6]
+              ]
+              134 => array:3 [
+                "path" => "/home/andy/Projects/ecommerce/resources/views/components/common/table/body/cell.blade.php"
+                "compiledPath" => "/home/andy/Projects/ecommerce/storage/framework/views/adf8816dbaf4c31866925f8dc174da2004290edb.php"
+                "data" => array:6 [ …6]
+              ]
+              135 => array:3 [
+                "path" => "/home/andy/Projects/ecommerce/resources/views/components/common/table/body/cell.blade.php"
+                "compiledPath" => "/home/andy/Projects/ecommerce/storage/framework/views/adf8816dbaf4c31866925f8dc174da2004290edb.php"
+                "data" => array:6 [ …6]
+              ]
+              136 => array:3 [
+                "path" => "/home/andy/Projects/ecommerce/resources/views/components/common/table/body/cell.blade.php"
+                "compiledPath" => "/home/andy/Projects/ecommerce/storage/framework/views/adf8816dbaf4c31866925f8dc174da2004290edb.php"
+                "data" => array:6 [ …6]
+              ]
+              137 => array:3 [
+                "path" => "/home/andy/Projects/ecommerce/resources/views/components/common/table/body/cell.blade.php"
+                "compiledPath" => "/home/andy/Projects/ecommerce/storage/framework/views/adf8816dbaf4c31866925f8dc174da2004290edb.php"
+                "data" => array:6 [ …6]
+              ]
+              138 => array:3 [
+                "path" => "/home/andy/Projects/ecommerce/resources/views/components/common/table/body/row.blade.php"
+                "compiledPath" => "/home/andy/Projects/ecommerce/storage/framework/views/22c316cffd010d5b251fdff06f8b405ecb289052.php"
+                "data" => array:6 [ …6]
+              ]
+              139 => array:3 [
+                "path" => "/home/andy/Projects/ecommerce/resources/views/components/common/table/body/cell.blade.php"
+                "compiledPath" => "/home/andy/Projects/ecommerce/storage/framework/views/adf8816dbaf4c31866925f8dc174da2004290edb.php"
+                "data" => array:6 [ …6]
+              ]
+              140 => array:3 [
+                "path" => "/home/andy/Projects/ecommerce/resources/views/components/common/table/body/cell.blade.php"
+                "compiledPath" => "/home/andy/Projects/ecommerce/storage/framework/views/adf8816dbaf4c31866925f8dc174da2004290edb.php"
+                "data" => array:6 [ …6]
+              ]
+              141 => array:3 [
+                "path" => "/home/andy/Projects/ecommerce/resources/views/components/common/table/body/cell.blade.php"
+                "compiledPath" => "/home/andy/Projects/ecommerce/storage/framework/views/adf8816dbaf4c31866925f8dc174da2004290edb.php"
+                "data" => array:6 [ …6]
+              ]
+              142 => array:3 [
+                "path" => "/home/andy/Projects/ecommerce/resources/views/components/common/table/body/cell.blade.php"
+                "compiledPath" => "/home/andy/Projects/ecommerce/storage/framework/views/adf8816dbaf4c31866925f8dc174da2004290edb.php"
+                "data" => array:6 [ …6]
+              ]
+              143 => array:3 [
+                "path" => "/home/andy/Projects/ecommerce/resources/views/components/common/table/body/row.blade.php"
+                "compiledPath" => "/home/andy/Projects/ecommerce/storage/framework/views/22c316cffd010d5b251fdff06f8b405ecb289052.php"
+                "data" => array:6 [ …6]
+              ]
+              144 => array:3 [
+                "path" => "/home/andy/Projects/ecommerce/resources/views/components/common/table/body/cell.blade.php"
+                "compiledPath" => "/home/andy/Projects/ecommerce/storage/framework/views/adf8816dbaf4c31866925f8dc174da2004290edb.php"
+                "data" => array:6 [ …6]
+              ]
+              145 => array:3 [
+                "path" => "/home/andy/Projects/ecommerce/resources/views/components/common/table/body/cell.blade.php"
+                "compiledPath" => "/home/andy/Projects/ecommerce/storage/framework/views/adf8816dbaf4c31866925f8dc174da2004290edb.php"
+                "data" => array:6 [ …6]
+              ]
+              146 => array:3 [
+                "path" => "/home/andy/Projects/ecommerce/resources/views/components/common/table/body/cell.blade.php"
+                "compiledPath" => "/home/andy/Projects/ecommerce/storage/framework/views/adf8816dbaf4c31866925f8dc174da2004290edb.php"
+                "data" => array:6 [ …6]
+              ]
+              147 => array:3 [
+                "path" => "/home/andy/Projects/ecommerce/resources/views/components/common/table/body/cell.blade.php"
+                "compiledPath" => "/home/andy/Projects/ecommerce/storage/framework/views/adf8816dbaf4c31866925f8dc174da2004290edb.php"
+                "data" => array:6 [ …6]
+              ]
+              148 => array:3 [
+                "path" => "/home/andy/Projects/ecommerce/resources/views/components/common/table/body/row.blade.php"
+                "compiledPath" => "/home/andy/Projects/ecommerce/storage/framework/views/22c316cffd010d5b251fdff06f8b405ecb289052.php"
+                "data" => array:6 [ …6]
+              ]
+              149 => array:3 [
+                "path" => "/home/andy/Projects/ecommerce/resources/views/components/common/table/body/cell.blade.php"
+                "compiledPath" => "/home/andy/Projects/ecommerce/storage/framework/views/adf8816dbaf4c31866925f8dc174da2004290edb.php"
+                "data" => array:6 [ …6]
+              ]
+              150 => array:3 [
+                "path" => "/home/andy/Projects/ecommerce/resources/views/components/common/table/body/cell.blade.php"
+                "compiledPath" => "/home/andy/Projects/ecommerce/storage/framework/views/adf8816dbaf4c31866925f8dc174da2004290edb.php"
+                "data" => array:6 [ …6]
+              ]
+              151 => array:3 [
+                "path" => "/home/andy/Projects/ecommerce/resources/views/components/common/table/body/cell.blade.php"
+                "compiledPath" => "/home/andy/Projects/ecommerce/storage/framework/views/adf8816dbaf4c31866925f8dc174da2004290edb.php"
+                "data" => array:6 [ …6]
+              ]
+              152 => array:3 [
+                "path" => "/home/andy/Projects/ecommerce/resources/views/components/common/table/body/cell.blade.php"
+                "compiledPath" => "/home/andy/Projects/ecommerce/storage/framework/views/adf8816dbaf4c31866925f8dc174da2004290edb.php"
+                "data" => array:6 [ …6]
+              ]
+              153 => array:3 [
+                "path" => "/home/andy/Projects/ecommerce/resources/views/components/common/table/body/row.blade.php"
+                "compiledPath" => "/home/andy/Projects/ecommerce/storage/framework/views/22c316cffd010d5b251fdff06f8b405ecb289052.php"
+                "data" => array:6 [ …6]
+              ]
+              154 => array:3 [
+                "path" => "/home/andy/Projects/ecommerce/resources/views/components/common/table/body/cell.blade.php"
+                "compiledPath" => "/home/andy/Projects/ecommerce/storage/framework/views/adf8816dbaf4c31866925f8dc174da2004290edb.php"
+                "data" => array:6 [ …6]
+              ]
+              155 => array:3 [
+                "path" => "/home/andy/Projects/ecommerce/resources/views/components/common/table/body/cell.blade.php"
+                "compiledPath" => "/home/andy/Projects/ecommerce/storage/framework/views/adf8816dbaf4c31866925f8dc174da2004290edb.php"
+                "data" => array:6 [ …6]
+              ]
+              156 => array:3 [
+                "path" => "/home/andy/Projects/ecommerce/resources/views/components/common/table/body/cell.blade.php"
+                "compiledPath" => "/home/andy/Projects/ecommerce/storage/framework/views/adf8816dbaf4c31866925f8dc174da2004290edb.php"
+                "data" => array:6 [ …6]
+              ]
+              157 => array:3 [
+                "path" => "/home/andy/Projects/ecommerce/resources/views/components/common/table/body/cell.blade.php"
+                "compiledPath" => "/home/andy/Projects/ecommerce/storage/framework/views/adf8816dbaf4c31866925f8dc174da2004290edb.php"
+                "data" => array:6 [ …6]
+              ]
+              158 => array:3 [
+                "path" => "/home/andy/Projects/ecommerce/resources/views/components/common/table/body/row.blade.php"
+                "compiledPath" => "/home/andy/Projects/ecommerce/storage/framework/views/22c316cffd010d5b251fdff06f8b405ecb289052.php"
+                "data" => array:6 [ …6]
+              ]
+              159 => array:3 [
+                "path" => "/home/andy/Projects/ecommerce/resources/views/components/common/table/body/cell.blade.php"
+                "compiledPath" => "/home/andy/Projects/ecommerce/storage/framework/views/adf8816dbaf4c31866925f8dc174da2004290edb.php"
+                "data" => array:6 [ …6]
+              ]
+              160 => array:3 [
+                "path" => "/home/andy/Projects/ecommerce/resources/views/components/common/table/body/cell.blade.php"
+                "compiledPath" => "/home/andy/Projects/ecommerce/storage/framework/views/adf8816dbaf4c31866925f8dc174da2004290edb.php"
+                "data" => array:6 [ …6]
+              ]
+              161 => array:3 [
+                "path" => "/home/andy/Projects/ecommerce/resources/views/components/common/table/body/cell.blade.php"
+                "compiledPath" => "/home/andy/Projects/ecommerce/storage/framework/views/adf8816dbaf4c31866925f8dc174da2004290edb.php"
+                "data" => array:6 [ …6]
+              ]
+              162 => array:3 [
+                "path" => "/home/andy/Projects/ecommerce/resources/views/components/common/table/body/cell.blade.php"
+                "compiledPath" => "/home/andy/Projects/ecommerce/storage/framework/views/adf8816dbaf4c31866925f8dc174da2004290edb.php"
+                "data" => array:6 [ …6]
+              ]
+              163 => array:3 [
+                "path" => "/home/andy/Projects/ecommerce/resources/views/components/common/table/body/row.blade.php"
+                "compiledPath" => "/home/andy/Projects/ecommerce/storage/framework/views/22c316cffd010d5b251fdff06f8b405ecb289052.php"
+                "data" => array:6 [ …6]
+              ]
+              164 => array:3 [
+                "path" => "/home/andy/Projects/ecommerce/resources/views/components/common/table/body/cell.blade.php"
+                "compiledPath" => "/home/andy/Projects/ecommerce/storage/framework/views/adf8816dbaf4c31866925f8dc174da2004290edb.php"
+                "data" => array:6 [ …6]
+              ]
+              165 => array:3 [
+                "path" => "/home/andy/Projects/ecommerce/resources/views/components/common/table/body/cell.blade.php"
+                "compiledPath" => "/home/andy/Projects/ecommerce/storage/framework/views/adf8816dbaf4c31866925f8dc174da2004290edb.php"
+                "data" => array:6 [ …6]
+              ]
+              166 => array:3 [
+                "path" => "/home/andy/Projects/ecommerce/resources/views/components/common/table/body/cell.blade.php"
+                "compiledPath" => "/home/andy/Projects/ecommerce/storage/framework/views/adf8816dbaf4c31866925f8dc174da2004290edb.php"
+                "data" => array:6 [ …6]
+              ]
+              167 => array:3 [
+                "path" => "/home/andy/Projects/ecommerce/resources/views/components/common/table/body/cell.blade.php"
+                "compiledPath" => "/home/andy/Projects/ecommerce/storage/framework/views/adf8816dbaf4c31866925f8dc174da2004290edb.php"
+                "data" => array:6 [ …6]
+              ]
+              168 => array:3 [
+                "path" => "/home/andy/Projects/ecommerce/resources/views/components/common/table/body/row.blade.php"
+                "compiledPath" => "/home/andy/Projects/ecommerce/storage/framework/views/22c316cffd010d5b251fdff06f8b405ecb289052.php"
+                "data" => array:6 [ …6]
+              ]
+              169 => array:3 [
+                "path" => "/home/andy/Projects/ecommerce/resources/views/components/common/table/body/cell.blade.php"
+                "compiledPath" => "/home/andy/Projects/ecommerce/storage/framework/views/adf8816dbaf4c31866925f8dc174da2004290edb.php"
+                "data" => array:6 [ …6]
+              ]
+              170 => array:3 [
+                "path" => "/home/andy/Projects/ecommerce/resources/views/components/common/table/body/cell.blade.php"
+                "compiledPath" => "/home/andy/Projects/ecommerce/storage/framework/views/adf8816dbaf4c31866925f8dc174da2004290edb.php"
+                "data" => array:6 [ …6]
+              ]
+              171 => array:3 [
+                "path" => "/home/andy/Projects/ecommerce/resources/views/components/common/table/body/cell.blade.php"
+                "compiledPath" => "/home/andy/Projects/ecommerce/storage/framework/views/adf8816dbaf4c31866925f8dc174da2004290edb.php"
+                "data" => array:6 [ …6]
+              ]
+              172 => array:3 [
+                "path" => "/home/andy/Projects/ecommerce/resources/views/components/common/table/body/cell.blade.php"
+                "compiledPath" => "/home/andy/Projects/ecommerce/storage/framework/views/adf8816dbaf4c31866925f8dc174da2004290edb.php"
+                "data" => array:6 [ …6]
+              ]
+              173 => array:3 [
+                "path" => "/home/andy/Projects/ecommerce/resources/views/components/common/table/body/row.blade.php"
+                "compiledPath" => "/home/andy/Projects/ecommerce/storage/framework/views/22c316cffd010d5b251fdff06f8b405ecb289052.php"
+                "data" => array:6 [ …6]
+              ]
+              174 => array:3 [
+                "path" => "/home/andy/Projects/ecommerce/resources/views/components/common/table/body/cell.blade.php"
+                "compiledPath" => "/home/andy/Projects/ecommerce/storage/framework/views/adf8816dbaf4c31866925f8dc174da2004290edb.php"
+                "data" => array:6 [ …6]
+              ]
+              175 => array:3 [
+                "path" => "/home/andy/Projects/ecommerce/resources/views/components/common/table/body/cell.blade.php"
+                "compiledPath" => "/home/andy/Projects/ecommerce/storage/framework/views/adf8816dbaf4c31866925f8dc174da2004290edb.php"
+                "data" => array:6 [ …6]
+              ]
+              176 => array:3 [
+                "path" => "/home/andy/Projects/ecommerce/resources/views/components/common/table/body/cell.blade.php"
+                "compiledPath" => "/home/andy/Projects/ecommerce/storage/framework/views/adf8816dbaf4c31866925f8dc174da2004290edb.php"
+                "data" => array:6 [ …6]
+              ]
+              177 => array:3 [
+                "path" => "/home/andy/Projects/ecommerce/resources/views/components/common/table/body/cell.blade.php"
+                "compiledPath" => "/home/andy/Projects/ecommerce/storage/framework/views/adf8816dbaf4c31866925f8dc174da2004290edb.php"
+                "data" => array:6 [ …6]
+              ]
+              178 => array:3 [
+                "path" => "/home/andy/Projects/ecommerce/resources/views/components/common/table/body/row.blade.php"
+                "compiledPath" => "/home/andy/Projects/ecommerce/storage/framework/views/22c316cffd010d5b251fdff06f8b405ecb289052.php"
+                "data" => array:6 [ …6]
+              ]
+              179 => array:3 [
+                "path" => "/home/andy/Projects/ecommerce/resources/views/components/common/table/body.blade.php"
+                "compiledPath" => "/home/andy/Projects/ecommerce/storage/framework/views/54105ec776371ad89d49c1fbf7a70e2ce50987f8.php"
+                "data" => array:6 [ …6]
+              ]
+              180 => array:3 [
+                "path" => "/home/andy/Projects/ecommerce/resources/views/components/common/table.blade.php"
+                "compiledPath" => "/home/andy/Projects/ecommerce/storage/framework/views/e10d0f354181f07103bf152d5b44948383041706.php"
+                "data" => array:6 [ …6]
+              ]
+            ]
+            #livewireComponents: []
+          }
+        ]
+      }
+      #finder: Illuminate\View\FileViewFinder {#4630
+        #files: Illuminate\Filesystem\Filesystem {#4669}
+        #paths: array:2 [
+          0 => "/home/andy/Projects/ecommerce/resources/views"
+          1 => "/tmp"
+        ]
+        #views: array:19 [
+          "category.index" => "/home/andy/Projects/ecommerce/resources/views/category/index.blade.php"
+          "layouts.app" => "/home/andy/Projects/ecommerce/resources/views/layouts/app.blade.php"
+          "components.admin-layout" => "/home/andy/Projects/ecommerce/resources/views/components/admin-layout.blade.php"
+          "components.common.input-search" => "/home/andy/Projects/ecommerce/resources/views/components/common/input-search.blade.php"
+          "components.category.table" => "/home/andy/Projects/ecommerce/resources/views/components/category/table.blade.php"
+          "components.common.table" => "/home/andy/Projects/ecommerce/resources/views/components/common/table.blade.php"
+          "components.common.table.header" => "/home/andy/Projects/ecommerce/resources/views/components/common/table/header.blade.php"
+          "components.common.table.header.cell" => "/home/andy/Projects/ecommerce/resources/views/components/common/table/header/cell.blade.php"
+          "components.common.table.body" => "/home/andy/Projects/ecommerce/resources/views/components/common/table/body.blade.php"
+          "components.common.table.body.row" => "/home/andy/Projects/ecommerce/resources/views/components/common/table/body/row.blade.php"
+          "components.common.table.body.cell" => "/home/andy/Projects/ecommerce/resources/views/components/common/table/body/cell.blade.php"
+          "jetstream::components.banner" => "/home/andy/Projects/ecommerce/resources/views/vendor/jetstream/components/banner.blade.php"
+          "navigation-menu" => "/home/andy/Projects/ecommerce/resources/views/navigation-menu.blade.php"
+          "jetstream::components.application-mark" => "/home/andy/Projects/ecommerce/resources/views/vendor/jetstream/components/application-mark.blade.php"
+          "jetstream::components.nav-link" => "/home/andy/Projects/ecommerce/resources/views/vendor/jetstream/components/nav-link.blade.php"
+          "jetstream::components.dropdown" => "/home/andy/Projects/ecommerce/resources/views/vendor/jetstream/components/dropdown.blade.php"
+          "jetstream::components.dropdown-link" => "/home/andy/Projects/ecommerce/resources/views/vendor/jetstream/components/dropdown-link.blade.php"
+          "jetstream::components.responsive-nav-link" => "/home/andy/Projects/ecommerce/resources/views/vendor/jetstream/components/responsive-nav-link.blade.php"
+          "laravel-bladezqGjaY" => "/tmp/laravel-bladezqGjaY.blade.php"
+        ]
+        #hints: array:4 [
+          "notifications" => array:1 [
+            0 => "/home/andy/Projects/ecommerce/vendor/laravel/framework/src/Illuminate/Notifications/resources/views"
+          ]
+          "pagination" => array:1 [
+            0 => "/home/andy/Projects/ecommerce/vendor/laravel/framework/src/Illuminate/Pagination/resources/views"
+          ]
+          "jetstream" => array:2 [
+            0 => "/home/andy/Projects/ecommerce/resources/views/vendor/jetstream"
+            1 => "/home/andy/Projects/ecommerce/vendor/laravel/jetstream/src/../resources/views"
+          ]
+          "livewire" => array:1 [
+            0 => "/home/andy/Projects/ecommerce/vendor/livewire/livewire/src/views/pagination"
+          ]
+        ]
+        #extensions: array:4 [
+          0 => "blade.php"
+          1 => "php"
+          2 => "css"
+          3 => "html"
+        ]
+      }
+      #events: Illuminate\Events\Dispatcher {#2831}
+      #container: Illuminate\Foundation\Application {#4487}
+      #shared: array:4 [
+        "__env" => Illuminate\View\Factory {#5487}
+        "app" => Illuminate\Foundation\Application {#4487}
+        "errors" => Illuminate\Support\ViewErrorBag {#4270
+          #bags: []
+        }
+        "_instance" => null
+      ]
+      #extensions: array:4 [
+        "blade.php" => "blade"
+        "php" => "php"
+        "css" => "file"
+        "html" => "file"
+      ]
+      #composers: []
+      #renderCount: 0
+      #renderedOnce: []
+      #componentStack: []
+      #componentData: []
+      #currentComponentData: []
+      #slots: array:6 [
+        0 => []
+        1 => []
+        2 => []
+        3 => []
+        4 => []
+        5 => []
+      ]
+      #slotStack: array:2 [
+        0 => []
+        1 => []
+      ]
+      #sections: []
+      #sectionStack: []
+      #loopsStack: []
+      #pushes: []
+      #prepends: []
+      #pushStack: []
+      #translationReplacements: []
+    }
+    #engine: Livewire\CompilerEngineForIgnition {#1909}
+    #view: "laravel-bladezqGjaY"
+    #data: array:1 [
+      "categories" => Illuminate\Database\Eloquent\Collection {#4628
+        #items: array:15 [
+          0 => App\Models\Category {#90 …29}
+          1 => App\Models\Category {#5389 …29}
+          2 => App\Models\Category {#1949 …29}
+          3 => App\Models\Category {#4735 …29}
+          4 => App\Models\Category {#4627 …29}
+          5 => App\Models\Category {#1945 …29}
+          6 => App\Models\Category {#1944 …29}
+          7 => App\Models\Category {#1904 …29}
+          8 => App\Models\Category {#2955 …29}
+          9 => App\Models\Category {#4620 …29}
+          10 => App\Models\Category {#4621 …29}
+          11 => App\Models\Category {#1853 …29}
+          12 => App\Models\Category {#5504 …29}
+          13 => App\Models\Category {#2850 …29}
+          14 => App\Models\Category {#5512 …29}
+        ]
+        #escapeWhenCastingToString: false
+      }
+    ]
+    #path: "/tmp/laravel-bladezqGjaY.blade.php"
+  }
+  #rendered: """
+    <table class="w-full rounded overflow-hidden shadow-lg bg-white px-4 py-5">\n
+        <thead class="bg-gray-800 text-white text-left">\n
+        <tr>\n
+            <th class="px-6 py-4" class="">ID</th>\n
+            <th class="px-6 py-4" class="">Nombre</th>\n
+            <th class="px-6 py-4" colspan="2" class=""></th>\n
+        </tr>\n
+    </thead>\n
+        <tbody class="divide-y divide-gray-200">\n
+        <tr class="text-gray-900">\n
+        <td class="px-2 py-4">#1</td>\n
+                    <td class="px-2 py-4"><div class="flex items-center space-x-4">\n
+                            <img src="https://via.placeholder.com/1280x740.png/003399?text=et" class="h-8 y-8">\n
+                            <p class="text-gray-600">Recusandae accusamus numquam animi est.</p>\n
+                        </div></td>\n
+                    <td class="px-2 py-4"><a class="bg-blue-400 text-white rounded-md text-sm py-1 px-3"\n
+                            href="http://localhost/category/1/edit">Editar</a></td>\n
+                    <td class="px-2 py-4"><form action="http://localhost/category/1" method="POST">\n
+                            <input type="hidden" name="_token" value="">                        <input type="hidden" name="_method" value="DELETE">                        <button class="bg-red-400 text-white rounded-md text-sm py-1 px-3"\n
+                                onclick="return confirm('¿Está seguro que desea eliminar esta categoría?')">Eliminar</button>\n
+                        </form></td>\n
+    </tr>\n
+                        <tr class="text-gray-900">\n
+        <td class="px-2 py-4">#2</td>\n
+                    <td class="px-2 py-4"><div class="flex items-center space-x-4">\n
+                            <img src="https://via.placeholder.com/1280x740.png/00ccdd?text=qui" class="h-8 y-8">\n
+                            <p class="text-gray-600">Quo temporibus id voluptatem quisquam.</p>\n
+                        </div></td>\n
+                    <td class="px-2 py-4"><a class="bg-blue-400 text-white rounded-md text-sm py-1 px-3"\n
+                            href="http://localhost/category/2/edit">Editar</a></td>\n
+                    <td class="px-2 py-4"><form action="http://localhost/category/2" method="POST">\n
+                            <input type="hidden" name="_token" value="">                        <input type="hidden" name="_method" value="DELETE">                        <button class="bg-red-400 text-white rounded-md text-sm py-1 px-3"\n
+                                onclick="return confirm('¿Está seguro que desea eliminar esta categoría?')">Eliminar</button>\n
+                        </form></td>\n
+    </tr>\n
+                        <tr class="text-gray-900">\n
+        <td class="px-2 py-4">#3</td>\n
+                    <td class="px-2 py-4"><div class="flex items-center space-x-4">\n
+                            <img src="https://via.placeholder.com/1280x740.png/00ffee?text=dolorum" class="h-8 y-8">\n
+                            <p class="text-gray-600">Magnam.</p>\n
+                        </div></td>\n
+                    <td class="px-2 py-4"><a class="bg-blue-400 text-white rounded-md text-sm py-1 px-3"\n
+                            href="http://localhost/category/3/edit">Editar</a></td>\n
+                    <td class="px-2 py-4"><form action="http://localhost/category/3" method="POST">\n
+                            <input type="hidden" name="_token" value="">                        <input type="hidden" name="_method" value="DELETE">                        <button class="bg-red-400 text-white rounded-md text-sm py-1 px-3"\n
+                                onclick="return confirm('¿Está seguro que desea eliminar esta categoría?')">Eliminar</button>\n
+                        </form></td>\n
+    </tr>\n
+                        <tr class="text-gray-900">\n
+        <td class="px-2 py-4">#4</td>\n
+                    <td class="px-2 py-4"><div class="flex items-center space-x-4">\n
+                            <img src="https://via.placeholder.com/1280x740.png/00ee44?text=nihil" class="h-8 y-8">\n
+                            <p class="text-gray-600">Reiciendis nulla.</p>\n
+                        </div></td>\n
+                    <td class="px-2 py-4"><a class="bg-blue-400 text-white rounded-md text-sm py-1 px-3"\n
+                            href="http://localhost/category/4/edit">Editar</a></td>\n
+                    <td class="px-2 py-4"><form action="http://localhost/category/4" method="POST">\n
+                            <input type="hidden" name="_token" value="">                        <input type="hidden" name="_method" value="DELETE">                        <button class="bg-red-400 text-white rounded-md text-sm py-1 px-3"\n
+                                onclick="return confirm('¿Está seguro que desea eliminar esta categoría?')">Eliminar</button>\n
+                        </form></td>\n
+    </tr>\n
+                        <tr class="text-gray-900">\n
+        <td class="px-2 py-4">#5</td>\n
+                    <td class="px-2 py-4"><div class="flex items-center space-x-4">\n
+                            <img src="https://via.placeholder.com/1280x740.png/002299?text=quia" class="h-8 y-8">\n
+                            <p class="text-gray-600">Aut porro.</p>\n
+                        </div></td>\n
+                    <td class="px-2 py-4"><a class="bg-blue-400 text-white rounded-md text-sm py-1 px-3"\n
+                            href="http://localhost/category/5/edit">Editar</a></td>\n
+                    <td class="px-2 py-4"><form action="http://localhost/category/5" method="POST">\n
+                            <input type="hidden" name="_token" value="">                        <input type="hidden" name="_method" value="DELETE">                        <button class="bg-red-400 text-white rounded-md text-sm py-1 px-3"\n
+                                onclick="return confirm('¿Está seguro que desea eliminar esta categoría?')">Eliminar</button>\n
+                        </form></td>\n
+    </tr>\n
+                        <tr class="text-gray-900">\n
+        <td class="px-2 py-4">#6</td>\n
+                    <td class="px-2 py-4"><div class="flex items-center space-x-4">\n
+                            <img src="https://via.placeholder.com/1280x740.png/00ccff?text=est" class="h-8 y-8">\n
+                            <p class="text-gray-600">Perferendis.</p>\n
+                        </div></td>\n
+                    <td class="px-2 py-4"><a class="bg-blue-400 text-white rounded-md text-sm py-1 px-3"\n
+                            href="http://localhost/category/6/edit">Editar</a></td>\n
+                    <td class="px-2 py-4"><form action="http://localhost/category/6" method="POST">\n
+                            <input type="hidden" name="_token" value="">                        <input type="hidden" name="_method" value="DELETE">                        <button class="bg-red-400 text-white rounded-md text-sm py-1 px-3"\n
+                                onclick="return confirm('¿Está seguro que desea eliminar esta categoría?')">Eliminar</button>\n
+                        </form></td>\n
+    </tr>\n
+                        <tr class="text-gray-900">\n
+        <td class="px-2 py-4">#7</td>\n
+                    <td class="px-2 py-4"><div class="flex items-center space-x-4">\n
+                            <img src="https://via.placeholder.com/1280x740.png/0088bb?text=aperiam" class="h-8 y-8">\n
+                            <p class="text-gray-600">Cum incidunt modi.</p>\n
+                        </div></td>\n
+                    <td class="px-2 py-4"><a class="bg-blue-400 text-white rounded-md text-sm py-1 px-3"\n
+                            href="http://localhost/category/7/edit">Editar</a></td>\n
+                    <td class="px-2 py-4"><form action="http://localhost/category/7" method="POST">\n
+                            <input type="hidden" name="_token" value="">                        <input type="hidden" name="_method" value="DELETE">                        <button class="bg-red-400 text-white rounded-md text-sm py-1 px-3"\n
+                                onclick="return confirm('¿Está seguro que desea eliminar esta categoría?')">Eliminar</button>\n
+                        </form></td>\n
+    </tr>\n
+                        <tr class="text-gray-900">\n
+        <td class="px-2 py-4">#8</td>\n
+                    <td class="px-2 py-4"><div class="flex items-center space-x-4">\n
+                            <img src="https://via.placeholder.com/1280x740.png/0044ff?text=qui" class="h-8 y-8">\n
+                            <p class="text-gray-600">Commodi optio.</p>\n
+                        </div></td>\n
+                    <td class="px-2 py-4"><a class="bg-blue-400 text-white rounded-md text-sm py-1 px-3"\n
+                            href="http://localhost/category/8/edit">Editar</a></td>\n
+                    <td class="px-2 py-4"><form action="http://localhost/category/8" method="POST">\n
+                            <input type="hidden" name="_token" value="">                        <input type="hidden" name="_method" value="DELETE">                        <button class="bg-red-400 text-white rounded-md text-sm py-1 px-3"\n
+                                onclick="return confirm('¿Está seguro que desea eliminar esta categoría?')">Eliminar</button>\n
+                        </form></td>\n
+    </tr>\n
+                        <tr class="text-gray-900">\n
+        <td class="px-2 py-4">#9</td>\n
+                    <td class="px-2 py-4"><div class="flex items-center space-x-4">\n
+                            <img src="https://via.placeholder.com/1280x740.png/00eecc?text=occaecati" class="h-8 y-8">\n
+                            <p class="text-gray-600">Laborum et.</p>\n
+                        </div></td>\n
+                    <td class="px-2 py-4"><a class="bg-blue-400 text-white rounded-md text-sm py-1 px-3"\n
+                            href="http://localhost/category/9/edit">Editar</a></td>\n
+                    <td class="px-2 py-4"><form action="http://localhost/category/9" method="POST">\n
+                            <input type="hidden" name="_token" value="">                        <input type="hidden" name="_method" value="DELETE">                        <button class="bg-red-400 text-white rounded-md text-sm py-1 px-3"\n
+                                onclick="return confirm('¿Está seguro que desea eliminar esta categoría?')">Eliminar</button>\n
+                        </form></td>\n
+    </tr>\n
+                        <tr class="text-gray-900">\n
+        <td class="px-2 py-4">#10</td>\n
+                    <td class="px-2 py-4"><div class="flex items-center space-x-4">\n
+                            <img src="https://via.placeholder.com/1280x740.png/000011?text=eos" class="h-8 y-8">\n
+                            <p class="text-gray-600">Qui necessitatibus.</p>\n
+                        </div></td>\n
+                    <td class="px-2 py-4"><a class="bg-blue-400 text-white rounded-md text-sm py-1 px-3"\n
+                            href="http://localhost/category/10/edit">Editar</a></td>\n
+                    <td class="px-2 py-4"><form action="http://localhost/category/10" method="POST">\n
+                            <input type="hidden" name="_token" value="">                        <input type="hidden" name="_method" value="DELETE">                        <button class="bg-red-400 text-white rounded-md text-sm py-1 px-3"\n
+                                onclick="return confirm('¿Está seguro que desea eliminar esta categoría?')">Eliminar</button>\n
+                        </form></td>\n
+    </tr>\n
+                        <tr class="text-gray-900">\n
+        <td class="px-2 py-4">#11</td>\n
+                    <td class="px-2 py-4"><div class="flex items-center space-x-4">\n
+                            <img src="https://via.placeholder.com/1280x740.png/004422?text=facere" class="h-8 y-8">\n
+                            <p class="text-gray-600">Est consequatur.</p>\n
+                        </div></td>\n
+                    <td class="px-2 py-4"><a class="bg-blue-400 text-white rounded-md text-sm py-1 px-3"\n
+                            href="http://localhost/category/11/edit">Editar</a></td>\n
+                    <td class="px-2 py-4"><form action="http://localhost/category/11" method="POST">\n
+                            <input type="hidden" name="_token" value="">                        <input type="hidden" name="_method" value="DELETE">                        <button class="bg-red-400 text-white rounded-md text-sm py-1 px-3"\n
+                                onclick="return confirm('¿Está seguro que desea eliminar esta categoría?')">Eliminar</button>\n
+                        </form></td>\n
+    </tr>\n
+                        <tr class="text-gray-900">\n
+        <td class="px-2 py-4">#12</td>\n
+                    <td class="px-2 py-4"><div class="flex items-center space-x-4">\n
+                            <img src="https://via.placeholder.com/1280x740.png/00ee55?text=in" class="h-8 y-8">\n
+                            <p class="text-gray-600">Sit sint delectus.</p>\n
+                        </div></td>\n
+                    <td class="px-2 py-4"><a class="bg-blue-400 text-white rounded-md text-sm py-1 px-3"\n
+                            href="http://localhost/category/12/edit">Editar</a></td>\n
+                    <td class="px-2 py-4"><form action="http://localhost/category/12" method="POST">\n
+                            <input type="hidden" name="_token" value="">                        <input type="hidden" name="_method" value="DELETE">                        <button class="bg-red-400 text-white rounded-md text-sm py-1 px-3"\n
+                                onclick="return confirm('¿Está seguro que desea eliminar esta categoría?')">Eliminar</button>\n
+                        </form></td>\n
+    </tr>\n
+                        <tr class="text-gray-900">\n
+        <td class="px-2 py-4">#13</td>\n
+                    <td class="px-2 py-4"><div class="flex items-center space-x-4">\n
+                            <img src="https://via.placeholder.com/1280x740.png/00ddaa?text=voluptatem" class="h-8 y-8">\n
+                            <p class="text-gray-600">Eaque corporis minus.</p>\n
+                        </div></td>\n
+                    <td class="px-2 py-4"><a class="bg-blue-400 text-white rounded-md text-sm py-1 px-3"\n
+                            href="http://localhost/category/13/edit">Editar</a></td>\n
+                    <td class="px-2 py-4"><form action="http://localhost/category/13" method="POST">\n
+                            <input type="hidden" name="_token" value="">                        <input type="hidden" name="_method" value="DELETE">                        <button class="bg-red-400 text-white rounded-md text-sm py-1 px-3"\n
+                                onclick="return confirm('¿Está seguro que desea eliminar esta categoría?')">Eliminar</button>\n
+                        </form></td>\n
+    </tr>\n
+                        <tr class="text-gray-900">\n
+        <td class="px-2 py-4">#14</td>\n
+                    <td class="px-2 py-4"><div class="flex items-center space-x-4">\n
+                            <img src="https://via.placeholder.com/1280x740.png/0000aa?text=magnam" class="h-8 y-8">\n
+                            <p class="text-gray-600">Aut pariatur.</p>\n
+                        </div></td>\n
+                    <td class="px-2 py-4"><a class="bg-blue-400 text-white rounded-md text-sm py-1 px-3"\n
+                            href="http://localhost/category/14/edit">Editar</a></td>\n
+                    <td class="px-2 py-4"><form action="http://localhost/category/14" method="POST">\n
+                            <input type="hidden" name="_token" value="">                        <input type="hidden" name="_method" value="DELETE">                        <button class="bg-red-400 text-white rounded-md text-sm py-1 px-3"\n
+                                onclick="return confirm('¿Está seguro que desea eliminar esta categoría?')">Eliminar</button>\n
+                        </form></td>\n
+    </tr>\n
+                        <tr class="text-gray-900">\n
+        <td class="px-2 py-4">#15</td>\n
+                    <td class="px-2 py-4"><div class="flex items-center space-x-4">\n
+                            <img src="https://via.placeholder.com/1280x740.png/009966?text=deserunt" class="h-8 y-8">\n
+                            <p class="text-gray-600">Eligendi aliquid et.</p>\n
+                        </div></td>\n
+                    <td class="px-2 py-4"><a class="bg-blue-400 text-white rounded-md text-sm py-1 px-3"\n
+                            href="http://localhost/category/15/edit">Editar</a></td>\n
+                    <td class="px-2 py-4"><form action="http://localhost/category/15" method="POST">\n
+                            <input type="hidden" name="_token" value="">                        <input type="hidden" name="_method" value="DELETE">                        <button class="bg-red-400 text-white rounded-md text-sm py-1 px-3"\n
+                                onclick="return confirm('¿Está seguro que desea eliminar esta categoría?')">Eliminar</button>\n
+                        </form></td>\n
+    </tr>\n
+    </tbody>\n
+    </table>\n
+    """
+}
+PHPUnit 9.5.10 by Sebastian Bergmann and contributors.
+
+.........E                                                        10 / 10 (100%)
+
+Time: 00:00.704, Memory: 40.50 MB
+
+There was 1 error:
+
+1) Tests\Feature\CategoryViewTest::test_index
+BadMethodCallException: Method Illuminate\Testing\TestView::rendered does not exist.
+
+/home/andy/Projects/ecommerce/vendor/laravel/framework/src/Illuminate/Macroable/Traits/Macroable.php:103
+/home/andy/Projects/ecommerce/tests/Feature/CategoryViewTest.php:23
+
+ERRORS!
+Tests: 10, Assertions: 20, Errors: 1.
